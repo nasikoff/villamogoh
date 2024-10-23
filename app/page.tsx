@@ -11,7 +11,7 @@ import { Button, Card, Image, CardBody, CardFooter, CardHeader, CircularProgress
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
-
+import { list, priceOne, priceTwo, priceBany, listtwo, contacts } from "@/config/site";
 
 import "swiper/css";
 import 'swiper/css/pagination';
@@ -161,6 +161,94 @@ export default function Home() {
             </Card>
          </div>
       </div>
+      </div>
+   </section>
+
+   <section className="pt-8 md:pt-10">
+      <h2 className="linked-heading text-2xl">
+         <span>Наши объекты</span>
+      </h2>
+      <div className="flex w-full flex-col mt-5">
+         <Swiper 
+            slidesPerView={'auto'}
+            spaceBetween={15}
+            freeMode={true}
+            modules={[FreeMode, Pagination]}
+            className="mySwiper02"
+            >
+            <SwiperSlide className="max-w-[400px]">
+               <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
+                  <CardHeader className="absolute z-10 top-1 flex-col items-start">
+                     <h4 className="text-white font-medium text-xl">Сottege One</h4>
+                     <p className="text-tiny text-white/80 uppercase font-bold">Дагестан, с. Могох</p>
+                  </CardHeader>
+                  <Image
+                     removeWrapper
+                     alt="Relaxing app background"
+                     className="z-0 w-full h-full object-cover"
+                     src="/img/1.webp"
+                     />
+                  <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
+                     <div className="flex flex-grow gap-2 items-center">
+                        <div className="flex flex-col">
+                           {priceOne.map((item) => ( 
+                           <h4 key={item.price} className="text-white font-medium text-xl">{item.price}<small className="text-white/80">/час</small></h4>
+                           ))}
+                        </div>
+                     </div>
+                     <Button radius="full" size="sm">Подробнее</Button>
+                  </CardFooter>
+               </Card>
+            </SwiperSlide>
+            <SwiperSlide className="max-w-[400px]">
+               <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
+                  <CardHeader className="absolute z-10 top-1 flex-col items-start">
+                     <h4 className="text-white font-medium text-xl">Сottege Two</h4>
+                     <p className="text-tiny text-white/80 uppercase font-bold">Дагестан, с. Могох</p>
+                  </CardHeader>
+                  <Image
+                     removeWrapper
+                     alt="Relaxing app background"
+                     className="z-0 w-full h-full object-cover"
+                     src="/img/2.webp"
+                     />
+                  <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
+                     <div className="flex flex-grow gap-2 items-center">
+                        <div className="flex flex-col">
+                           {priceTwo.map((item) => ( 
+                           <h4 key={item.price} className="text-white font-medium text-xl">{item.price}<small className="text-white/80">/час</small></h4>
+                           ))}
+                        </div>
+                     </div>
+                     <Button radius="full" size="sm">Подробнее</Button>
+                  </CardFooter>
+               </Card>
+            </SwiperSlide>
+            <SwiperSlide className="max-w-[400px]">
+               <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
+                  <CardHeader className="absolute z-10 top-1 flex-col items-start">
+                     <h4 className="text-white font-medium text-xl">Russian Bathhouse</h4>
+                     <p className="text-tiny text-white/80 uppercase font-bold">Дагестан, с. Могох</p>
+                  </CardHeader>
+                  <Image
+                     removeWrapper
+                     alt="Relaxing app background"
+                     className="z-0 w-full h-full object-cover"
+                     src="/img/6.jpeg"
+                     />
+                  <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
+                     <div className="flex flex-grow gap-2 items-center">
+                        <div className="flex flex-col">
+                           {priceBany.map((item) => ( 
+                           <h4 key={item.price} className="text-white font-medium text-xl">{item.price}<small className="text-white/80">/час</small></h4>
+                           ))}
+                        </div>
+                     </div>
+                     <Button radius="full" size="sm">Подробнее</Button>
+                  </CardFooter>
+               </Card>
+            </SwiperSlide>
+         </Swiper>
       </div>
    </section>
       
