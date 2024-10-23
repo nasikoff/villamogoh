@@ -13,6 +13,8 @@ import { FreeMode, Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
 import  IconWrapper  from "@/components/IconWrapper";
 import { list, priceOne, priceTwo, priceBany, listtwo, contacts } from "@/config/site";
+import Iframe from 'react-iframe'
+import NextLink from "next/link";
 
 import "swiper/css";
 import 'swiper/css/pagination';
@@ -300,6 +302,47 @@ export default function Home() {
             </div>
             
          </div>
+      </div>
+   </section>
+
+   <section className="pt-8 md:pt-10 md:pb-24 pb-24">
+      <h2 className="linked-heading text-2xl">
+         <span>Наши контакты</span>
+      </h2>
+
+      <div className="mt-5 flex flex-col md:flex-row">
+          
+     
+      <div className="flex-auto w-full md:w-64">
+      <Iframe url="https://yandex.ru/map-widget/v1/?um=constructor%3A6335f8acd1220368f602308808ddf0c3bfb498b2900e9700412d6e8337c173b6&amp;source=constructor"
+        width="100%" 
+        id=""
+        className="rounded-[20px] h-[300px] md:h-[450px]"
+        display="block"
+        position="relative"/>
+      </div>
+     
+          
+          
+      <div className="flex-auto w-full md:w-36 mt-5 pl-0 md:pl-16">
+      {contacts.map((item, html) => (
+               <Card key={html} className="rounded-none bg-transparent outline-none shadow-none divide-x">
+                <NextLink href={item.href}>
+                  <CardHeader className="flex gap-5 p-[15px] pl-5">
+                     <IconWrapper className="bg-default/10 text-secundary">
+                        {item.svg}
+                     </IconWrapper>
+                     <div className="flex flex-col">
+                        <p className="text-md font-semibold">{item.title}</p>
+                     </div>
+                  </CardHeader>
+                  </NextLink>
+               </Card>
+               ))}
+      </div>
+          
+       
+        
       </div>
    </section>
       
