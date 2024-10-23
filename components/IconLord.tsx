@@ -1,4 +1,3 @@
-'use client'
  
 import { Player } from "@lordicon/react";
 import { useEffect, useRef, useState } from 'react';
@@ -35,7 +34,7 @@ export default function Icon() {
 
     return (
         <div onClick={iconClick}>
-            <Player ref={playerRef} icon={data} size={128}   /> 
+            <Player icon={undefined}   /> 
         </div>
     )
 }
