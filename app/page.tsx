@@ -26,7 +26,7 @@ export default function Home() {
     <>
     
     
-    <IconLord />
+    
     
     <section className="block md:hidden pt-8 md:pt-10">
       <span className={title()}>Добро пожаловать в&nbsp;</span>
