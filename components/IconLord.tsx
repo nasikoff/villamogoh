@@ -27,9 +27,7 @@ export default function Icon() {
         });
     }, []);
     
-    const playerReady = () => {
-        playerRef.current?.playFromBeginning();
-    }
+ 
 
     const iconClick = () => {
         playerRef.current?.playFromBeginning();
