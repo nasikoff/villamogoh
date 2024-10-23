@@ -11,6 +11,7 @@ import { Button, Card, Image, CardBody, CardFooter, CardHeader, CircularProgress
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
+import  IconWrapper  from "@/components/IconWrapper";
 import { list, priceOne, priceTwo, priceBany, listtwo, contacts } from "@/config/site";
 
 import "swiper/css";
@@ -249,6 +250,56 @@ export default function Home() {
                </Card>
             </SwiperSlide>
          </Swiper>
+      </div>
+   </section>
+
+   <section className="pt-8 md:pt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+         <div>
+            <h2 className="linked-heading text-2xl">
+               <span>Почему выбирают нас</span>
+            </h2>
+            <div className="gap-4 grid grid-cols-2 sm:grid-cols-2 mt-5">
+               {list.map((item, index) => (
+               <Card shadow="sm" key={index} >
+                  <CardBody className="overflow-visible p-0">
+                     <Image
+                        shadow="sm"
+                        radius="lg"
+                        width="100%"
+                        alt={item.title}
+                        className="w-full object-cover h-[140px]"
+                        src={item.img}
+                        />
+                  </CardBody>
+                  <CardFooter className="text-small justify-between">
+                     <b>{item.title}</b>
+                  </CardFooter>
+               </Card>
+               ))}
+            </div>
+         </div>
+         <div>
+            <h2 className="linked-heading text-2xl">
+               <span>Что мы предлагаем</span>
+            </h2>
+
+            <div className="gap-4 grid grid-cols-1 lg:grid-cols-2 mt-5">
+               {listtwo.map((item, index) => (
+               <Card key={index}>
+                  <CardHeader className="flex gap-5 p-[15px] pl-5">
+                     <IconWrapper className="bg-primary/10 text-primary">
+                        {item.svg}
+                     </IconWrapper>
+                     <div className="flex flex-col">
+                        <p className="text-md font-semibold">{item.title}</p>
+                     </div>
+                  </CardHeader>
+               </Card>
+               ))}
+            </div>
+            
+         </div>
       </div>
    </section>
       
