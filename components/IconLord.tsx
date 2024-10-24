@@ -1,7 +1,6 @@
- 
+ 'use client'
 import { Player } from "@lordicon/react";
 import { useEffect, useRef, useState } from 'react';
-
 
 async function loadIcon(name: string) {
     const request = await fetch(`/${name}.json`);
@@ -16,7 +15,7 @@ export default function Icon() {
 
     useEffect(() => {
         if (initialized.current) {
-            return;   
+            return;
         }
 
         initialized.current = true;
@@ -25,8 +24,6 @@ export default function Icon() {
             setData(iconData);
         });
     }, []);
-    
- 
 
     const iconClick = () => {
         playerRef.current?.playFromBeginning();
@@ -34,7 +31,7 @@ export default function Icon() {
 
     return (
         <div onClick={iconClick}>
-            <Player ref={playerRef} icon={data} size={128}></Player>
+            <Player ref={playerRef} icon={data} size={128} />
         </div>
     )
 }
