@@ -2,9 +2,9 @@ import { FC, useEffect, useRef } from 'react';
 import { Player } from '@lordicon/react';
  
 
-const ICON = require('@/public/confetti.json');
+const ICON = require('@/public/swipe.json');
 
-export const IconLord: FC<{ name: string }> = ({ name }) => {
+export const IconLord: FC<{ name: string }> = () => {
   const playerRef = useRef<Player>(null);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ export const IconLord: FC<{ name: string }> = ({ name }) => {
 
   return (
     <div>
-      <Player ref={playerRef} size={96} icon={ICON} />
+      <Player ref={playerRef} size={28} icon={ICON} onComplete={() => playerRef.current?.playFromBeginning()} colorize='curentcolor'/>
     </div>
   );
 };

@@ -15,7 +15,7 @@ import  IconWrapper  from "@/components/IconWrapper";
 import { list, priceOne, priceTwo, priceBany, listtwo, contacts } from "@/config/site";
 import Iframe from 'react-iframe'
 import NextLink from "next/link";
-import IconLord from "../components/IconLord";
+import Swipe from "../components/animeicon/Swipe";
 
 import "swiper/css";
 import 'swiper/css/pagination';
@@ -26,7 +26,7 @@ export default function Home() {
     <>
     
     
-    <IconLord name={""} />
+    <Swipe name={""} />
     
     <section className="block md:hidden pt-8 md:pt-10">
       <span className={title()}>Добро пожаловать в&nbsp;</span>
