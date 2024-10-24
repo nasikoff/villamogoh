@@ -26,7 +26,7 @@ export default function Home() {
     <>
     
     
-    <Swipe name={""} />
+   
     
     <section className="block md:hidden pt-8 md:pt-10">
       <span className={title()}>Добро пожаловать в&nbsp;</span>
@@ -45,9 +45,7 @@ export default function Home() {
          <Dropdown backdrop="blur">
             <DropdownTrigger>
                <Button color="primary">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
-                     <path fill="currentColor" d="M17.5 16.5v2q0 .2.15.35T18 19t.35-.15t.15-.35v-2h2q.2 0 .35-.15T21 16t-.15-.35t-.35-.15h-2v-2q0-.2-.15-.35T18 13t-.35.15t-.15.35v2h-2q-.2 0-.35.15T15 16t.15.35t.35.15zM18 21q-2.075 0-3.537-1.463T13 16t1.463-3.537T18 11t3.538 1.463T23 16t-1.463 3.538T18 21M4 17V8q0-.475.213-.9t.587-.7l6-4.5q.275-.2.575-.3T12 1.5t.625.1t.575.3l6.05 4.55q.175.125.263.325t.087.425q0 .425-.288.713T18.6 8.2q-.175 0-.325-.05T18 8l-6-4.5L6 8v9h4q.425 0 .713.288T11 18t-.288.713T10 19H6q-.825 0-1.412-.587T4 17m8-6.75"/>
-                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M17.616 16.385V18.5q0 .154.115.27q.115.114.269.114t.27-.115q.114-.115.114-.269v-2.116H20.5q.154 0 .27-.115q.114-.115.114-.269t-.115-.27q-.115-.114-.269-.114h-2.116V13.5q0-.154-.115-.27q-.115-.114-.269-.114t-.27.115q-.114.115-.114.269v2.116H15.5q-.154 0-.27.115q-.114.115-.114.269t.115.27q.115.114.269.114zM18 20q-1.671 0-2.835-1.164Q14 17.67 14 16t1.165-2.835T18 12t2.836 1.165T22 16t-1.164 2.836T18 20M5 16.384V8.308q0-.384.172-.727q.171-.344.474-.566l5.385-4.077q.423-.323.966-.323t.972.323l5.385 4.078q.303.222.474.566q.172.345.172.73v.425q0 .223-.17.385t-.413.132q-1.425-.108-2.812.414q-1.388.523-2.401 1.536q-1.177 1.177-1.665 2.727t-.198 3.144q.067.373-.154.649t-.57.276H6.616q-.667 0-1.141-.475T5 16.386"></path></svg>
                   Забронировать
                </Button>
             </DropdownTrigger>
@@ -169,9 +167,21 @@ export default function Home() {
    </section>
 
    <section className="pt-8 md:pt-10">
-      <h2 className="linked-heading text-2xl">
-         <span>Наши объекты</span>
-      </h2>
+      
+   <div className="flex flex-row">
+      <div className="basis-4/5">
+            <h2 className="linked-heading text-2xl">
+               <span>Наши объекты</span>
+               
+            </h2>
+      </div>
+  <div className="basis-1/5 xl:hidden grid justify-end ">
+         <Swipe name={""} />
+  </div>
+   
+</div>
+      
+     
       <div className="flex w-full flex-col mt-5">
          <Swiper 
             slidesPerView={'auto'}

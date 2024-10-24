@@ -9,6 +9,7 @@
 		"lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
 	},
 	"dependencies": {
+		"@lordicon/element": "^1.10.0",
 		"@lordicon/react": "^1.10.0",
 		"@nextui-org/button": "2.0.38",
 		"@nextui-org/code": "2.0.33",
