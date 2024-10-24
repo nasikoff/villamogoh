@@ -1,37 +1,23 @@
- 'use client'
-import { Player } from "@lordicon/react";
-import { useEffect, useRef, useState } from 'react';
+import { FC, useEffect, useRef } from 'react';
+import { Player } from '@lordicon/react';
+ 
 
-async function loadIcon(name: string) {
-    const request = await fetch(`/${name}.json`);
-    const data = await request.json();
-    return data;
-}
+const ICON = require('@/public/confetti.json');
 
-export default function Icon() {
-    const initialized = useRef(false);
-    const playerRef = useRef<Player>(null);
-    const [data, setData] = useState<any>(null)
+export const IconLord: FC<{ name: string }> = ({ name }) => {
+  const playerRef = useRef<Player>(null);
 
-    useEffect(() => {
-        if (initialized.current) {
-            return;
-        }
-
-        initialized.current = true;
-
-        loadIcon('confetti').then((iconData) => {
-            setData(iconData);
-        });
-    }, []);
-
-    const iconClick = () => {
-        playerRef.current?.playFromBeginning();
+  useEffect(() => {
+    if (playerRef.current) {
+        playerRef.current.playFromBeginning();
     }
+}, []);
 
-    return (
-        <div onClick={iconClick}>
-            <Player ref={playerRef} icon={data} size={128} />
-        </div>
-    )
-}
+  return (
+    <div>
+      <Player ref={playerRef} size={96} icon={ICON} />
+    </div>
+  );
+};
+
+export default IconLord;
