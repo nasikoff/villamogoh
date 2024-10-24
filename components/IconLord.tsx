@@ -34,7 +34,7 @@ export default function Icon() {
 
     return (
         <div onClick={iconClick}>
-            <Player ref={playerRef} icon={data} size={128}/>
+            <Player ref={playerRef} icon={data} size={128}></Player>
         </div>
     )
 }
