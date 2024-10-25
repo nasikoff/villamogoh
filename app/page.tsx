@@ -1,17 +1,12 @@
 'use client'
-import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code";
-import { button as buttonStyles } from "@nextui-org/theme";
 import { PriceOne, PriceRB, PriceTwo, siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import { title } from "@/components/primitives";
 import { Button, Card, Image, CardBody, CardFooter, CardHeader, CircularProgress, Dropdown, DropdownItem, DropdownMenu, DropdownSection, DropdownTrigger } from "@nextui-org/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
 import  IconWrapper  from "@/components/IconWrapper";
-import { list, cottage, listtwo, contacts } from "@/config/site";
+import { list, listtwo, contacts } from "@/config/site";
 import Iframe from 'react-iframe'
 import NextLink from "next/link";
 import Swipe from "../components/animeicon/Swipe";
@@ -202,7 +197,7 @@ export default function Home() {
                   <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
                      <div className="flex flex-grow gap-2 items-center">
                         <div className="flex flex-col">
-                           <h4 key={""} className="text-white font-medium text-xl">{PriceOne}<small className="text-white/80">/час</small></h4>
+                           <h4 key={""} className="text-white font-medium text-xl">{PriceOne}<small className="text-white/80">/ночь</small></h4>
                         </div>
                      </div>
                      <Button radius="full" size="sm">Подробнее</Button>
@@ -224,8 +219,7 @@ export default function Home() {
                   <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
                      <div className="flex flex-grow gap-2 items-center">
                      <div className="flex flex-col">
-                           
-                           <h4 key={""} className="text-white font-medium text-xl">{PriceTwo}<small className="text-white/80">/час</small></h4>
+                           <h4 key={""} className="text-white font-medium text-xl">{PriceTwo}<small className="text-white/80">/ночь</small></h4>
                         </div>
                      </div>
                      <Button radius="full" size="sm">Подробнее</Button>
