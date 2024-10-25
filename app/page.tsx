@@ -24,10 +24,7 @@ import 'swiper/css/navigation';
 export default function Home() {
   return (
     <>
-    
-    
-   
-    
+
     <section className="block md:hidden pt-8 md:pt-10">
       <span className={title()}>Добро пожаловать в&nbsp;</span>
       <br />
