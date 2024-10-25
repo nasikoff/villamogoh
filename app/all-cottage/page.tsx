@@ -40,27 +40,31 @@ export default function AllCottage() {
 
                   
 
+                  <div className="flex flex-row flex-wrap gap-1">
+                    <Chip
+                          size="lg"
+                          startContent={<SquareIcon />}
+                          variant="faded"
+                          color="default"
+                        >
+                        <b className="pl-1">{item.square}</b> 
+                      </Chip>
+                    <Chip
+                        size="lg"
+                        startContent={<GuestsIcon />}
+                        variant="faded"
+                        color="default"
+                      >
+                      <b className="pl-1">{item.guests}</b> 
+                    </Chip>
+                  
+   
+                  </div>
 
 
 
 
-
-                  <Chip
-                       size="lg"
-                      startContent={<GuestsIcon />}
-                      variant="faded"
-                      color="default"
-                    >
-                    <b className="pl-1">{item.guests}</b> 
-                  </Chip>
-                  <Chip
-                       size="lg"
-                      startContent={<SquareIcon />}
-                      variant="faded"
-                      color="default"
-                    >
-                    <b className="pl-1">{item.square}</b> 
-                  </Chip>
+                  
                 </CardBody>
 
 
