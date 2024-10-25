@@ -38,26 +38,7 @@ export default function AllCottage() {
                   <p className="m-5 ml-0">{item.description}</p>
 
 
-                  <div className="flex flex-row gap-1 flex-wrap">
-                      <Chip
-                          size="lg"
-                          
-                          variant="faded"
-                          color="default"
-                        >
-                        <span className="pl-1">{item.square}</span> 
-                      </Chip>
-                        <Chip
-                            size="lg"
-                         
-                            variant="faded"
-                            color="default"
-                          >
-                          <span className="pl-1">{item.guests}</span> 
-                        </Chip>
-                        <div>{item.conditioner}</div> 
-                        
-                      </div>
+             
 
 
 
