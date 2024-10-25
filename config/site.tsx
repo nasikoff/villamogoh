@@ -1,8 +1,7 @@
  
+import { ConditionerIcon } from "@/components/icons";
 import { Chip } from "@nextui-org/chip";
-
  
-
 export const cottage = [
   {
     name: "Сottege One",
@@ -13,11 +12,7 @@ export const cottage = [
     title: "Сottege One",
     square: "120 кв.м",
     guests: "8",
-
-    vvv:    
-    <Chip size="lg" variant="faded">
-      <b className="pl-1">122</b> 
-    </Chip>,
+    conditioner:<Chip size="lg" variant="faded" startContent={<ConditionerIcon/>}><span className="pl-1">4</span></Chip>,
     description: "Сottege One в нашем комплексе предлагает вам непревзойденный комфорт и современные удобства. Внутри вас ждет стильный и функциональный интерьер, где каждая деталь продумана для вашего удобства. Современная мебель и бытовая техника обеспечат вам максимальный комфорт, а панорамные окна позволят наслаждаться потрясающими видами на величественные горы, создавая атмосферу умиротворения и гармонии", 
     img: "/img/1.webp",
   },
@@ -29,6 +24,7 @@ export const cottage = [
     day:"/ночь",
     square: "120 кв.м",
     guests: "8",
+    conditioner:<Chip size="lg" variant="faded" startContent={<ConditionerIcon/>}><span className="pl-1">4</span></Chip>,
     description: "Сottege Two в нашем комплексе — это воплощение современного комфорта и роскоши. Внутри вас ждет элегантное и функциональное пространство, где каждая деталь продумана для вашего удобства. Современная мебель и бытовая техника высочайшего качества обеспечат вам максимальный комфорт, а панорамные окна откроют перед вами захватывающие виды на величественные горы, создавая атмосферу умиротворения и гармонии.", 
     img: "/img/1.webp",
   },
