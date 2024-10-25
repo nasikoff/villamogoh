@@ -3,7 +3,7 @@ import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
 import { button as buttonStyles } from "@nextui-org/theme";
-import { siteConfig } from "@/config/site";
+import { PriceOne, PriceRB, PriceTwo, siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import { Button, Card, Image, CardBody, CardFooter, CardHeader, CircularProgress, Dropdown, DropdownItem, DropdownMenu, DropdownSection, DropdownTrigger } from "@nextui-org/react";
@@ -20,6 +20,7 @@ import "swiper/css";
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+ 
 export default function Home() {
   return (
     <>
@@ -201,9 +202,7 @@ export default function Home() {
                   <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
                      <div className="flex flex-grow gap-2 items-center">
                         <div className="flex flex-col">
-                           {cottage.map((item) => ( 
-                           <h4 key={item.price} className="text-white font-medium text-xl">{item.price}<small className="text-white/80">/час</small></h4>
-                           ))}
+                           <h4 key={""} className="text-white font-medium text-xl">{PriceOne}<small className="text-white/80">/час</small></h4>
                         </div>
                      </div>
                      <Button radius="full" size="sm">Подробнее</Button>
@@ -225,9 +224,8 @@ export default function Home() {
                   <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
                      <div className="flex flex-grow gap-2 items-center">
                      <div className="flex flex-col">
-                           {cottage.map((item) => ( 
-                           <h4 key={item.price} className="text-white font-medium text-xl">{item.price}<small className="text-white/80">/час</small></h4>
-                           ))}
+                           
+                           <h4 key={""} className="text-white font-medium text-xl">{PriceTwo}<small className="text-white/80">/час</small></h4>
                         </div>
                      </div>
                      <Button radius="full" size="sm">Подробнее</Button>
@@ -249,9 +247,7 @@ export default function Home() {
                   <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
                      <div className="flex flex-grow gap-2 items-center">
                      <div className="flex flex-col">
-                           {cottage.map((item) => ( 
-                           <h4 key={item.price} className="text-white font-medium text-xl">{item.price}<small className="text-white/80">/час</small></h4>
-                           ))}
+                           <h4 key={""} className="text-white font-medium text-xl">{PriceRB}<small className="text-white/80">/час</small></h4>
                         </div>
                      </div>
                      <Button radius="full" size="sm">Подробнее</Button>
