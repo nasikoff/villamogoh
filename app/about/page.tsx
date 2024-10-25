@@ -2,8 +2,20 @@ import { title } from "@/components/primitives";
 
 export default function AboutPage() {
   return (
-    <div>
-      <h1 className={title()}>О нас</h1>
-    </div>
+    <>
+    
+    
+    
+    
+    <section className="block pt-8 md:pt-10">
+      <span className={title()}>О нас</span>
+    </section>
+    
+    
+   
+      
+      
+      
+      </>
   );
 }

@@ -1,4 +1,4 @@
-export default function AllCottage({
+export default function AllCottageLayout({
   children,
 }: {
   children: React.ReactNode;
