@@ -18,9 +18,9 @@ export default function AllCottage() {
     <div className="gap-3 grid grid-cols-1 sm:grid-cols-2">
     
       {cottage.map((item, html) => (
-        <NextLink href={item.href}>
+        
                 <Card key={html} shadow="sm" isPressable className="py-4 border-transparent backdrop-blur-lg backdrop-saturate-[1.8] bg-white dark:bg-default-400/10">
-                   
+                   <NextLink href={item.href}>
                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                   <p className="text-xl uppercase font-bold">{item.title}</p>
                 </CardHeader>
@@ -55,9 +55,9 @@ export default function AllCottage() {
                   </CardFooter>
                   
 
-
+                  </NextLink>
                 </Card>
-                </NextLink>
+            
               
 
       ))}
