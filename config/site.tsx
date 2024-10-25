@@ -1,4 +1,6 @@
+'use client'
  
+
 export const cottage = [
   {
     name: "Сottege One",
