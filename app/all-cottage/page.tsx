@@ -1,7 +1,8 @@
 'use client'
+import { GuestsIcon, SquareIcon } from "@/components/icons";
 import { title } from "@/components/primitives";
 import { cottage } from "@/config/site";
-import { Card, CardBody, CardFooter, CardHeader, Image, Link } from "@nextui-org/react";
+import { Card, CardBody, CardFooter, CardHeader, Chip, Image, Link } from "@nextui-org/react";
 import NextLink from "next/link";
 
 export default function AllCottage() {
@@ -19,7 +20,7 @@ export default function AllCottage() {
     
       {cottage.map((item, html) => (
         
-                <Card key={html} shadow="sm" isPressable className="py-4 border-transparent backdrop-blur-lg backdrop-saturate-[1.8] bg-white dark:bg-default-400/10">
+                <Card key={html} shadow="sm" isHoverable className="py-4 border-transparent backdrop-blur-lg backdrop-saturate-[1.8] bg-white dark:bg-default-400/10">
                    <NextLink href={item.href}>
                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                   <p className="text-xl uppercase font-bold">{item.title}</p>
@@ -35,6 +36,34 @@ export default function AllCottage() {
                     src={item.img}
                    />
                   <p className="m-5 ml-0">{item.description}</p>
+
+
+                  <div className="flex flex-row gap-1 flex-wrap">
+                      <Chip
+                          size="lg"
+                          startContent={<SquareIcon />}
+                          variant="faded"
+                          color="default"
+                        >
+                        <span className="pl-1">{item.square}</span> 
+                      </Chip>
+                        <Chip
+                            size="lg"
+                            startContent={<GuestsIcon />}
+                            variant="faded"
+                            color="default"
+                          >
+                          <span className="pl-1">{item.guests}</span> 
+                        </Chip>
+                        <div>{item.conditioner}</div> 
+                        
+                      </div>
+
+
+
+
+
+               
                 </CardBody>
 
 
