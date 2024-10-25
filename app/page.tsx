@@ -20,17 +20,9 @@ import "swiper/css";
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-
-const PriceOne = cottage[0].price;
-const PriceTwo = cottage[1].price;
-const PriceRB = cottage[2].price;
-
-
 export default function Home() {
   return (
     <>
-
- 
 
     <section className="block md:hidden pt-8 md:pt-10">
       <span className={title()}>Добро пожаловать в&nbsp;</span>
@@ -257,8 +249,8 @@ export default function Home() {
                   <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
                      <div className="flex flex-grow gap-2 items-center">
                      <div className="flex flex-col">
-                           {cottage.map(() => ( 
-                           <h4 key={PriceRB} className="text-white font-medium text-xl">{PriceRB}<small className="text-white/80">/час</small></h4>
+                           {cottage.map((item) => ( 
+                           <h4 key={item.price} className="text-white font-medium text-xl">{item.price}<small className="text-white/80">/час</small></h4>
                            ))}
                         </div>
                      </div>
