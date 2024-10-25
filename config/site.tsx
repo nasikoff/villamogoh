@@ -31,7 +31,9 @@ export const cottage = [
    
 ];
 
- 
+export const PriceOne = [ cottage[0].price ];
+export const PriceTwo = [ cottage[1].price ];
+export const PriceRB = [ cottage[2].price ];
 
 
 
