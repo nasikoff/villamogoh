@@ -1,7 +1,9 @@
 'use client'
+ 
+import { SquareIcon, GuestsIcon } from "@/components/icons";
 import { title } from "@/components/primitives";
 import { cottage } from "@/config/site";
-import { Card, CardBody, CardFooter, CardHeader, Image, Link } from "@nextui-org/react";
+import { Card, CardBody, CardFooter, CardHeader, Chip, Image, Link } from "@nextui-org/react";
 import NextLink from "next/link";
 
 export default function AllCottage() {
@@ -36,7 +38,33 @@ export default function AllCottage() {
                    />
                   <p className="m-5 ml-0">{item.description}</p>
 
-                  
+
+                  <div className="flex flex-row gap-1 flex-wrap">
+                      <Chip
+                          size="lg"
+                          startContent={<SquareIcon />}
+                          variant="faded"
+                          color="default"
+                        >
+                        <span className="pl-1">{item.square}</span> 
+                      </Chip>
+                        <Chip
+                            size="lg"
+                            startContent={<GuestsIcon />}
+                            variant="faded"
+                            color="default"
+                          >
+                          <span className="pl-1">{item.guests}</span> 
+                        </Chip>
+                        <div>{item.conditioner}</div> 
+                        
+                      </div>
+
+
+
+
+
+               
                 </CardBody>
 
 
