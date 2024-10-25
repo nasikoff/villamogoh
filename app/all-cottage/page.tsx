@@ -1,9 +1,21 @@
 import { title } from "@/components/primitives";
 
-export default function DocsPage() {
+export default function AllCottage() {
   return (
-    <div>
-      <h1 className={title()}>Наши объекты</h1>
-    </div>
+    <>
+    
+    
+    
+    
+    <section className="block pt-8 md:pt-10">
+      <span className={title()}>Наши объекты</span>
+    </section>
+    
+    
+   
+      
+      
+      
+      </>
   );
 }
