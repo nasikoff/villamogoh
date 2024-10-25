@@ -1,10 +1,4 @@
-'use client'
  
-import { Chip } from "@nextui-org/react";
-import { title } from "process";
-
- 
-
 export const cottage = [
   {
     name: "Сottege One",
