@@ -1,5 +1,5 @@
 'use client'
-import { GuestsIcon } from "@/components/icons";
+import { GuestsIcon, SquareIcon } from "@/components/icons";
 import { title } from "@/components/primitives";
 import { cottage } from "@/config/site";
 import { Card, CardBody, CardFooter, CardHeader, Chip, Image, Link } from "@nextui-org/react";
@@ -52,6 +52,14 @@ export default function AllCottage() {
                       color="default"
                     >
                     <b className="pl-1">{item.guests}</b> 
+                  </Chip>
+                  <Chip
+                       size="lg"
+                      startContent={<SquareIcon />}
+                      variant="faded"
+                      color="default"
+                    >
+                    <b className="pl-1">{item.square}</b> 
                   </Chip>
                 </CardBody>
 
