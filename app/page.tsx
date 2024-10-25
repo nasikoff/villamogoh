@@ -203,7 +203,7 @@ export default function Home() {
                   <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
                      <div className="flex flex-grow gap-2 items-center">
                         <div className="flex flex-col">
-                           <h4 className="text-white font-medium text-xl">{PriceOne}<small className="text-white/80">/час</small></h4>
+                           <h4 key='{PriceOne} 'className="text-white font-medium text-xl">{PriceOne}<small className="text-white/80">/час</small></h4>
                         </div>
                      </div>
                      <Button radius="full" size="sm">Подробнее</Button>
@@ -225,7 +225,7 @@ export default function Home() {
                   <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
                      <div className="flex flex-grow gap-2 items-center">
                      <div className="flex flex-col">
-                           <h4   className="text-white font-medium text-xl">{PriceTwo}<small className="text-white/80">/час</small></h4>
+                           <h4 key='{PriceTwo}' className="text-white font-medium text-xl">{PriceTwo}<small className="text-white/80">/час</small></h4>
                         </div>
                      </div>
                      <Button radius="full" size="sm">Подробнее</Button>
@@ -247,7 +247,7 @@ export default function Home() {
                   <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
                      <div className="flex flex-grow gap-2 items-center">
                      <div className="flex flex-col">
-                           <h4   className="text-white font-medium text-xl">{PriceRB}<small className="text-white/80">/час</small></h4>
+                           <h4 key='{PriceRB}' className="text-white font-medium text-xl">{PriceRB}<small className="text-white/80">/час</small></h4>
                         </div>
                      </div>
                      <Button radius="full" size="sm">Подробнее</Button>
