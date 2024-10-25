@@ -57,6 +57,8 @@ export default function AllCottage() {
                       >
                       <b className="pl-1">{item.guests}</b> 
                     </Chip>
+
+                    <span>{item.vvv}</span>
                   
    
                   </div>
