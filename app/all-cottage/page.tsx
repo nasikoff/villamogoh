@@ -55,10 +55,10 @@ export default function AllCottage() {
                         variant="faded"
                         color="default"
                       >
-                      <b className="pl-1">{item.guests}</b> 
+                      <span>{item.guests}</span> 
                     </Chip>
 
-                    <span>{item.conditioner}</span>
+                    <div>{item.conditioner}</div>
                   
    
                   </div>

@@ -45,7 +45,7 @@ export default function Home() {
                <DropdownSection title="Выберите объекты" showDivider>
                   <DropdownItem key="new" href="#">Сottege One</DropdownItem>
                   <DropdownItem key="copy">Сottege Two</DropdownItem>
-                  <DropdownItem key="copy">Русская баня</DropdownItem>
+                  <DropdownItem key="copy">Russian Bathhouse</DropdownItem>
                   <DropdownItem key="delete" className="text-danger" color="danger">
                      Закрыть окно
                   </DropdownItem>
@@ -119,14 +119,14 @@ export default function Home() {
             <Card className="col-span-12 sm:col-span-4 h-[200px]">
                <CardHeader className="absolute z-10 top-1 flex-col !items-start">
                   <p className="text-tiny text-white/60 uppercase font-bold"></p>
-                  <h4 className=" font-medium text-large uppercase">Русская баня</h4>
+                  <h4 className=" font-medium text-white text-large uppercase">Russian Bathhouse</h4>
                </CardHeader>
                <Image
                   isZoomed
                   removeWrapper
                   alt="Card background"
                   className="z-0 w-full h-full object-cover"
-                  src="/img/s.png"
+                  src="/img/11.webp"
                   />
                <CardFooter className="justify-between py-1 absolute before:rounded-xl rounded-large bottom-1 ml-1 z-10">
                   <Button className="text-tiny bg-black/20" variant="flat" color="default" radius="lg" size="sm">

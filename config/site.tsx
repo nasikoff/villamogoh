@@ -8,7 +8,7 @@ export const cottage = [
     price: "₽10000",
     address: "Дагестан, с. Могох",
     day:"/ночь", 
-    href:"/",
+    href:"#",
     title: "Сottege One",
     square: "120 кв.м",
     guests: "8",
@@ -20,7 +20,7 @@ export const cottage = [
     name: "Сottege Two",
     price: "9900",
     title: "Сottege Two",
-    href:"/",
+    href:"#",
     day:"/ночь",
     square: "120 кв.м",
     guests: "8",
@@ -32,13 +32,13 @@ export const cottage = [
     name: "Russian Bathhouse",
     price: "₽900",
     day:"/час",
-    href:"/",
+    href:"#",
     square: "70 кв.м",
     guests: "6",
     conditioner: "",
     title: "Russian Bathhouse",
     description: "Russian Bathhouse в нашем комплексе предлагает уютную и атмосферную парную с традиционными деревянными элементами. Внутри есть все необходимое для комфортного отдыха: войлочные шапки, веники, настои трав и эфирные масла.Russian Bathhouse — это не только гигиеническая процедура, но и оздоровительный ритуал, который помогает очистить поры, активизировать кровообращение и подарить ощущение легкости.",
-    img: "/img/1.webp", 
+    img: "/img/6.jpeg", 
     
   },
   
@@ -78,19 +78,19 @@ export const siteConfig = {
 export const list = [
   {
     title: "Потрясающие виды",
-    img: "/images/fruit-1.jpeg",  
+    img: "/img/3.webp", 
   },
   {
     title: "Комфорт и уют",
-    img: "/images/fruit-2.jpeg",  
+    img: "/img/10.webp",  
   },
   {
     title: "Близость к природе",
-    img: "/images/fruit-3.jpeg",
+    img: "/img/12.jpeg",  
   },
   {
     title: "Индивидуальный подход",
-    img: "/images/fruit-4.jpeg",
+    img: "/img/14.jpeg",  
   },
    
 ];
