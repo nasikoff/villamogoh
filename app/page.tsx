@@ -10,7 +10,7 @@ import { list, listtwo, contacts } from "@/config/site";
 import Iframe from 'react-iframe'
 import NextLink from "next/link";
 import Swipe from "../components/animeicon/Swipe";
-
+import Link from 'next/link'
 import "swiper/css";
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -32,7 +32,7 @@ export default function Home() {
          <br />
          <span className={title({ color: "blue" })} style={{fontFamily: "Audiowide", }} >VillaMogoh&nbsp;</span>
          <br />
-         <p className="w-full md:w-11/12 my-2 text-lg lg:text-xl pt-6 pb-4 font-normal text-default-500 block max-w-full">VILLAMOGOH - идеальное место для отдыха в окружении природы. Наши уютные коттеджи с видом на величественные горы подарят вам незабываемые впечатления. <br/> Забронируйте свой отдых уже сегодня!</p>
+         <p className="w-full md:w-11/12 my-2 text-lg lg:text-lg pt-6 pb-4 font-normal text-default-500 block max-w-full">VILLAMOGOH - идеальное место для отдыха в окружении природы. Наши уютные коттеджи с видом на величественные горы подарят вам незабываемые впечатления. <br/> Забронируйте свой отдых уже сегодня!</p>
          <br />
          <Dropdown backdrop="blur">
             <DropdownTrigger>
@@ -197,10 +197,10 @@ export default function Home() {
                   <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
                      <div className="flex flex-grow gap-2 items-center">
                         <div className="flex flex-col">
-                           <h4 key={""} className="text-white font-medium text-xl">{PriceOne}<small className="text-white/80">/ночь</small></h4>
+                           <h4 key={""} className="text-white font-bold text-xl">{PriceOne}<small className="text-white/80 font-normal"> / ночь</small></h4>
                         </div>
                      </div>
-                     <Button radius="full" size="sm">Подробнее</Button>
+                     <Button  radius="full" size="sm"><NextLink href="/all-cottage/cottage-one" >Подробнее</NextLink></Button>
                   </CardFooter>
                </Card>
             </SwiperSlide>
@@ -219,7 +219,7 @@ export default function Home() {
                   <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
                      <div className="flex flex-grow gap-2 items-center">
                      <div className="flex flex-col">
-                           <h4 key={""} className="text-white font-medium text-xl">{PriceTwo}<small className="text-white/80">/ночь</small></h4>
+                           <h4 key={""} className="text-white font-bold text-xl">{PriceTwo}<small className="text-white/80 font-normal"> / ночь</small></h4>
                         </div>
                      </div>
                      <Button radius="full" size="sm">Подробнее</Button>
@@ -241,7 +241,7 @@ export default function Home() {
                   <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
                      <div className="flex flex-grow gap-2 items-center">
                      <div className="flex flex-col">
-                           <h4 key={""} className="text-white font-medium text-xl">{PriceRB}<small className="text-white/80">/час</small></h4>
+                           <h4 key={""} className="text-white font-bold text-xl">{PriceRB}<small className="text-white/80 font-normal"> / час</small></h4>
                         </div>
                      </div>
                      <Button radius="full" size="sm">Подробнее</Button>

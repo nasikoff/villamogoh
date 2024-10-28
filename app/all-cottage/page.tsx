@@ -22,7 +22,7 @@ export default function AllCottage() {
         
                 <Card key={html} shadow="sm" isHoverable className="py-4 border-transparent backdrop-blur-lg backdrop-saturate-[1.8] bg-white dark:bg-default-400/10">
                    <NextLink href={item.href}>
-                <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+                <CardHeader className="pb-0 pt-0 px-4 flex-col items-start">
                   <p className="text-xl uppercase font-bold">{item.title}</p>
                 </CardHeader>
                 <CardBody className="overflow-visible py-2">
@@ -72,9 +72,9 @@ export default function AllCottage() {
 
                   <CardFooter>
                   <div className="flex flex-row w-full">
-                    <div className="basis-4/5 text-left ml-3 text-2xl">{item.price}<small className="opacity-80">{item.day}</small> </div>
+                    <div className="basis-4/5 text-left ml-3 text-2xl font-bold">{item.price}<small className="opacity-80 font-normal">{item.day}</small> </div>
                       <div className="basis-1/5 text-right mr-3">
-                        <span className="hover:underline  hover:underline-offset-2">Подробнее</span>
+                        <span className="hover:underline  hover:underline-offset-2"><Chip size="md">Подробнее</Chip></span>
                       </div>
    
                   </div>

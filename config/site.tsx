@@ -7,8 +7,8 @@ export const cottage = [
     name: "Сottege One",
     price: "₽10000",
     address: "Дагестан, с. Могох",
-    day:"/ночь", 
-    href:"#",
+    day:" / ночь", 
+    href:"/all-cottage/cottage-one",
     title: "Сottege One",
     square: "120 кв.м",
     guests: "8",
@@ -21,7 +21,7 @@ export const cottage = [
     price: "9900",
     title: "Сottege Two",
     href:"#",
-    day:"/ночь",
+    day:" / ночь",
     square: "120 кв.м",
     guests: "8",
     conditioner:<Chip size="lg" variant="faded" startContent={<ConditionerIcon/>}><span className="pl-1">4</span></Chip>,
@@ -31,7 +31,7 @@ export const cottage = [
   { 
     name: "Russian Bathhouse",
     price: "₽900",
-    day:"/час",
+    day:" / час",
     href:"#",
     square: "70 кв.м",
     guests: "6",
@@ -49,6 +49,9 @@ export const PriceOne = [ cottage[0].price ];
 export const PriceTwo = [ cottage[1].price ];
 export const PriceRB = [ cottage[2].price ];
 
+export const DescriptionOne = [ cottage[0].description ];
+export const DescriptionTwo = [ cottage[1].description ];
+export const DescriptionRB = [ cottage[2].description ];
 
 
 export const siteConfig = {
