@@ -163,7 +163,7 @@ export const BedRoomIcon: React.FC<IconSvgProps> = (props) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
- <defs><mask id="ipTDoubleBed0"><g fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" stroke-width="2.5"><path d="M8 12a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v11H8zM6 35v4m36-4v4"/><path fill="#555" d="M20 18h-6a3 3 0 0 0-3 3v2h12v-2a3 3 0 0 0-3-3m14 0h-6a3 3 0 0 0-3 3v2h12v-2a3 3 0 0 0-3-3"/><path d="M4 26a3 3 0 0 1 3-3h34a3 3 0 0 1 3 3v9H4z"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTDoubleBed0)"/>
+ <defs><mask id="ipTDoubleBed0"><g fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5"><path d="M8 12a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v11H8zM6 35v4m36-4v4"/><path fill="#555" d="M20 18h-6a3 3 0 0 0-3 3v2h12v-2a3 3 0 0 0-3-3m14 0h-6a3 3 0 0 0-3 3v2h12v-2a3 3 0 0 0-3-3"/><path d="M4 26a3 3 0 0 1 3-3h34a3 3 0 0 1 3 3v9H4z"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTDoubleBed0)"/>
     </svg>
   );
 };
@@ -183,7 +183,7 @@ export const BathRoomIcon: React.FC<IconSvgProps> = (props) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-<path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" stroke-width="1.5" d="M3 12h1m16 0a1 1 0 0 0 1-1V7c0-1-.6-3-3-3s-3 2-3 3m5 5v2c0 1.138-.583 3.248-2.745 3.841M20 12H4m0 0v2c0 1.138.583 3.248 2.745 3.841M6 20l.745-2.159m0 0c.37.102.787.159 1.255.159h8a4.7 4.7 0 0 0 1.255-.159M18 20l-.745-2.159M15 7h-2m2 0h2"/>
+<path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 12h1m16 0a1 1 0 0 0 1-1V7c0-1-.6-3-3-3s-3 2-3 3m5 5v2c0 1.138-.583 3.248-2.745 3.841M20 12H4m0 0v2c0 1.138.583 3.248 2.745 3.841M6 20l.745-2.159m0 0c.37.102.787.159 1.255.159h8a4.7 4.7 0 0 0 1.255-.159M18 20l-.745-2.159M15 7h-2m2 0h2"/>
     </svg>
   );
 };
@@ -203,7 +203,7 @@ export const GuestsIcon: React.FC<IconSvgProps> = (props) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-     <g fill="none" stroke="currentColor" stroke-width="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M2.5 9.5L12 4l9.5 5.5"/><path d="M7 21v-1a5 5 0 0 1 10 0v1"/><path strokeLinecap="round" strokeLinejoin="round" d="M12 15a3 3 0 1 0 0-6a3 3 0 0 0 0 6"/></g>
+     <g fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M2.5 9.5L12 4l9.5 5.5"/><path d="M7 21v-1a5 5 0 0 1 10 0v1"/><path strokeLinecap="round" strokeLinejoin="round" d="M12 15a3 3 0 1 0 0-6a3 3 0 0 0 0 6"/></g>
     </svg>
   );
 };
