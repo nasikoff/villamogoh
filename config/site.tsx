@@ -53,6 +53,14 @@ export const DescriptionOne = [ cottage[0].description ];
 export const DescriptionTwo = [ cottage[1].description ];
 export const DescriptionRB = [ cottage[2].description ];
 
+export const SquareOne = [ cottage[0].square ];
+export const SquareTwo = [ cottage[1].square ];
+export const SquareRB = [ cottage[2].square ];
+
+export const GuestsOne = [ cottage[0].guests ];
+export const GuestsTwo = [ cottage[1].guests ];
+export const GuestsRB = [ cottage[2].guests ];
+
 
 export const siteConfig = {
     name: "VillaMogoh - Коттеджи с видом на горы",

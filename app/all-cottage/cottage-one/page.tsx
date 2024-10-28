@@ -1,5 +1,5 @@
 'use client'
-import { PriceOne, DescriptionOne } from "@/config/site";
+import { PriceOne, DescriptionOne, SquareOne, GuestsOne } from "@/config/site";
 import { title } from "@/components/primitives";
 import { Button, Card, Image, CardBody, CardFooter, CardHeader, CircularProgress, Dropdown, DropdownItem, DropdownMenu, DropdownSection, DropdownTrigger } from "@nextui-org/react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,6 +9,7 @@ import { Navigation } from 'swiper/modules';
 import "swiper/css";
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { BathRoomIcon, BedRoomIcon, GuestsIcon, SquareIcon } from "@/components/icons";
 
 export default function CottageOnePage() {
   return (
@@ -17,16 +18,43 @@ export default function CottageOnePage() {
     
     
     
-    <section className="flex pt-4 md:pt-10">
+    <section key={""} className="flex pt-4 md:pt-10">
       
-      <div key={""} className="hidden xl:block md:block lg:block sm:hidden flex-auto w-36 inline-block max-w-xl text-left justify-center">
+      <div className="hidden xl:block md:block lg:block sm:hidden flex-auto w-36 inline-block max-w-xl text-left justify-center">
       <span className={title()}>Cottage One</span>
-      <p className="mt-2 opacity-60">Дагестан, с. Могох</p>
+      <p className="pt-2 opacity-60">Дагестан, с. Могох</p>
 
 
-      <h2 className="my-4 text-2xl font-bold">{PriceOne}<small className="opacity-60 font-normal"> / ночь</small></h2>
+      <h2 className="py-4 text-2xl font-bold">{PriceOne}<small className="opacity-60 font-normal"> / ночь</small></h2>
+
+
+
+
+      <div className="pt-8 flex flex-row justify-left gap-5" >
+    
+      <div>
+        <SquareIcon height={40}/>
+        <p className="mt-2 font-medium group-data-[selected=true]:text-warning">{SquareOne}</p>
+      </div>
+
+      <div>
+        <GuestsIcon height={40}/>
+        <p className="mt-2 font-medium group-data-[selected=true]:text-warning">{GuestsOne} гостей</p>
+      </div>
+
+      <div>
+        <BedRoomIcon height={40}/>
+        <p className="mt-2 font-medium group-data-[selected=true]:text-warning">3 спальни</p>
+      </div>
+
+      <div>
+        <BathRoomIcon height={40}/>
+        <p className="mt-2 font-medium group-data-[selected=true]:text-warning">1 ванная</p>
+      </div>
+      
+      </div>
    
-         <p className="w-full md:w-11/12 my-2 text-lg lg:text-lg pt-6 pb-4 font-normal text-default-500 block max-w-full">{DescriptionOne}</p>
+         <p className="w-full md:w-11/12 my-2 text-lg lg:text-lg pt-10 pb-4 font-normal text-default-500 block max-w-full">{DescriptionOne}</p>
          <br />
          <Dropdown backdrop="blur">
             <DropdownTrigger>
@@ -96,7 +124,7 @@ export default function CottageOnePage() {
          </Swiper>
          <Card className="mt-5 block md:hidden ">
             <CardBody>
-               <p><b>VILLAMOGOH</b> - идеальное место для отдыха в окружении природы. Наши уютные коттеджи с видом на величественные горы подарят вам незабываемые впечатления. <br/> Забронируйте свой отдых уже сегодня!</p>
+               <p>{DescriptionOne}</p>
             </CardBody>
          </Card>
      

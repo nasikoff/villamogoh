@@ -123,17 +123,88 @@ export const NextUILogo: React.FC<IconSvgProps> = (props) => {
   );
 };
 
-export const SquareIcon  = ({
-}: IconSvgProps) => (
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 56 56"><path fill="currentColor" d="M40.131 7.904h-18.27c-1.28 0-2.02.65-1.997 1.795s.718 1.818 1.997 1.818h18.203c2.245 0 3.501 1.19 3.501 3.524v24.375l-3.366-3.59l-2.133-2.11c-.763-.741-1.84-.831-2.603-.068s-.718 1.863.045 2.626l7.564 7.519c1.459 1.459 3.097 1.459 4.556 0l7.564-7.519c.785-.763.808-1.863.045-2.626s-1.818-.696-2.582.067l-2.154 2.11l-3.322 3.569V14.862c0-4.646-2.379-6.958-7.048-6.958m-24.24 41.32h18.27c1.28 0 2.02-.65 1.998-1.795c-.023-1.167-.719-1.818-1.998-1.818H15.936c-2.245 0-3.48-1.19-3.48-3.524V17.712l3.345 3.569l2.155 2.132c.763.74 1.818.83 2.604.045c.763-.74.718-1.84-.045-2.604l-7.564-7.541c-1.482-1.437-3.098-1.437-4.58 0L.809 20.854C.9 21.618 0 22.717.763 23.458c.763.786 1.84.696 2.604-.045l2.154-2.132l3.322-3.546v24.532c0 4.646 2.357 6.958 7.048 6.958"/></svg>
-);
+ 
 
-export const GuestsIcon  = ({
-}: IconSvgProps) => (
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 28 28"><path fill="currentColor" d="M8.5 9.5a3.75 3.75 0 1 0 0-7.5a3.75 3.75 0 0 0 0 7.5M2 12.982C2 11.887 2.887 11 3.982 11h5.6a4.75 4.75 0 0 0 2.294 6H9.483a2.98 2.98 0 0 0-2.758 1.847c-2.005-.371-3.207-1.372-3.894-2.49C2 15.01 2 13.618 2 13.378zM16.123 17h2.395c1.245 0 2.312.763 2.758 1.847c2.005-.371 3.207-1.372 3.894-2.49c.83-1.348.83-2.74.83-2.98v-.395A1.98 1.98 0 0 0 24.018 11h-5.6a4.75 4.75 0 0 1-2.294 6M23.25 5.75a3.75 3.75 0 1 1-7.5 0a3.75 3.75 0 0 1 7.5 0M7.5 19.982C7.5 18.887 8.387 18 9.482 18h9.036c1.095 0 1.982.887 1.982 1.982v.395c0 .24 0 1.632-.83 2.98C18.8 24.773 17.106 26 14 26s-4.8-1.228-5.67-2.642c-.83-1.349-.83-2.74-.83-2.981zM14 16.5A3.75 3.75 0 1 0 14 9a3.75 3.75 0 0 0 0 7.5"/></svg>
-);
-
+ 
 export const ConditionerIcon  = ({
 }: IconSvgProps) => (
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"></path><path fill="currentColor" d="M10 16a1 1 0 0 1 1 1v1.172a3 3 0 0 1-.879 2.12l-.414.415a1 1 0 0 1-1.414-1.414l.414-.414A1 1 0 0 0 9 18.172V17a1 1 0 0 1 1-1m4 0a1 1 0 0 1 .993.883L15 17v1.172a1 1 0 0 0 .206.608l.087.099l.414.414a1 1 0 0 1-1.32 1.497l-.094-.083l-.414-.414a3 3 0 0 1-.872-1.923L13 18.172V17a1 1 0 0 1 1-1m-8 0a1 1 0 0 1 .993.883L7 17v.613a2 2 0 0 1-1.218 1.84l-.15.057l-1.316.439a1 1 0 0 1-.74-1.854l.108-.044L5 17.613V17a1 1 0 0 1 1-1m12 0a1 1 0 0 1 .993.883L19 17v.613l1.316.438a1 1 0 0 1-.52 1.928l-.112-.03l-1.316-.44a2 2 0 0 1-1.362-1.736l-.006-.16V17a1 1 0 0 1 1-1m0-13a3 3 0 0 1 2.995 2.824L21 6v6a3 3 0 0 1-2.824 2.995L18 15H6a3 3 0 0 1-2.995-2.824L3 12V6a3 3 0 0 1 2.824-2.995L6 3zm0 8H6a1 1 0 0 0-1 1v1h14v-1a1 1 0 0 0-1-1m-1-5a1 1 0 1 0 0 2a1 1 0 0 0 0-2"></path></g></svg>
 );
+
+
+
+export const SquareIcon: React.FC<IconSvgProps> = (props) => {
+  const { width, height = 22 } = props;
+
+  return (
+    <svg
+      fill="none"
+      height={height}
+      viewBox="0 0 24 24"
+      width={width}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+       <path fill="currentColor" d="M6.43 19.462q-.79 0-1.34-.551t-.551-1.342V7.523q0-.552.473-.763t.838.155l1.48 1.481l-.772.773l.469.47l.773-.774l2.139 2.139l-.773.773l.469.47l.773-.774l2.215 2.216l-.773.773l.47.469l.772-.773l2.139 2.138l-.773.773l.469.47l.773-.774l1.423 1.423q.346.346.136.81q-.211.463-.743.463zM6.617 18H14.3L6 9.7v7.685q0 .269.173.442t.443.173"/>
+    </svg>
+  );
+};
+
+
+export const BedRoomIcon: React.FC<IconSvgProps> = (props) => {
+  const { width, height = 22 } = props;
+
+  return (
+    <svg
+      fill="none"
+      height={height}
+      viewBox="0 0 48 48"
+      width={width}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+ <defs><mask id="ipTDoubleBed0"><g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"><path d="M8 12a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v11H8zM6 35v4m36-4v4"/><path fill="#555" d="M20 18h-6a3 3 0 0 0-3 3v2h12v-2a3 3 0 0 0-3-3m14 0h-6a3 3 0 0 0-3 3v2h12v-2a3 3 0 0 0-3-3"/><path d="M4 26a3 3 0 0 1 3-3h34a3 3 0 0 1 3 3v9H4z"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTDoubleBed0)"/>
+    </svg>
+  );
+};
+
+
+ 
+
+export const BathRoomIcon: React.FC<IconSvgProps> = (props) => {
+  const { width, height = 22 } = props;
+
+  return (
+    <svg
+      fill="none"
+      height={height}
+      viewBox="0 0 24 24"
+      width={width}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12h1m16 0a1 1 0 0 0 1-1V7c0-1-.6-3-3-3s-3 2-3 3m5 5v2c0 1.138-.583 3.248-2.745 3.841M20 12H4m0 0v2c0 1.138.583 3.248 2.745 3.841M6 20l.745-2.159m0 0c.37.102.787.159 1.255.159h8a4.7 4.7 0 0 0 1.255-.159M18 20l-.745-2.159M15 7h-2m2 0h2"/>
+    </svg>
+  );
+};
+
+ 
+ 
+ 
+export const GuestsIcon: React.FC<IconSvgProps> = (props) => {
+  const { width, height = 22 } = props;
+
+  return (
+    <svg
+      fill="none"
+      height={height}
+      viewBox="0 0 24 24"
+      width={width}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+     <g fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.5 9.5L12 4l9.5 5.5"/><path d="M7 21v-1a5 5 0 0 1 10 0v1"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 15a3 3 0 1 0 0-6a3 3 0 0 0 0 6"/></g>
+    </svg>
+  );
+};
+
