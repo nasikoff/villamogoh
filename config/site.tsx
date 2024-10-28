@@ -18,7 +18,7 @@ export const cottage = [
   },
   {
     name: "Сottege Two",
-    price: "9900",
+    price: "10000",
     title: "Сottege Two",
     href:"#",
     day:" / ночь",
