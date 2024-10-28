@@ -39,7 +39,7 @@ export default function CottageOnePage() {
 
       <div>
         <GuestsIcon height={40}/>
-        <p className="mt-2 font-medium group-data-[selected=true]:text-warning">{GuestsOne} гостей</p>
+        <p className="mt-2 font-medium group-data-[selected=true]:text-warning">{GuestsOne}гостей</p>
       </div>
 
       <div>
