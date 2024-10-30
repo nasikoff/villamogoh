@@ -152,15 +152,18 @@ export const BedRoomIcon: React.FC<IconSvgProps> = (props) => {
     <svg
       fill="none"
       height={height}
-      viewBox="0 0 48 48"
+      viewBox="0 0 24 24"
       width={width}
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
- <defs><mask id="ipTDoubleBed0"><g fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5"><path d="M8 12a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v11H8zM6 35v4m36-4v4"/><path fill="#555" d="M20 18h-6a3 3 0 0 0-3 3v2h12v-2a3 3 0 0 0-3-3m14 0h-6a3 3 0 0 0-3 3v2h12v-2a3 3 0 0 0-3-3"/><path d="M4 26a3 3 0 0 1 3-3h34a3 3 0 0 1 3 3v9H4z"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTDoubleBed0)"/>
+ <path strokeWidth="1" fill="currentColor" d="M2 11.975q0-.825.588-1.4T4 10V7q0-.825.588-1.412T6 5h12q.825 0 1.413.588T20 7v3q.825 0 1.413.588T22 12v3.65q0 .575-.387.963T20.65 17l-.55 1.675q-.05.15-.175.238T19.65 19h-.3q-.15 0-.275-.088t-.175-.237L18.35 17H5.65l-.55 1.675q-.05.15-.175.238T4.65 19h-.3q-.15 0-.275-.088t-.175-.237L3.35 17q-.575 0-.962-.387T2 15.65zM13 10h5V7h-5zm-7 0h5V7H6zm-2 5h16v-3H4zm16 0H4z"/>
     </svg>
   );
 };
+
+ 
+ 
 
 export const BathRoomIcon: React.FC<IconSvgProps> = (props) => {
   const { width, height = 22 } = props;
@@ -178,6 +181,32 @@ export const BathRoomIcon: React.FC<IconSvgProps> = (props) => {
     </svg>
   );
 };
+
+
+
+
+export const BroneIcon: React.FC<IconSvgProps> = (props) => {
+  const { width, height = 22 } = props;
+
+  return (
+    <svg
+      fill="none"
+      height={height}
+      viewBox="0 0 24 24"
+      width={width}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+<path fill="currentColor" d="M17.616 16.385V18.5q0 .154.115.27q.115.114.269.114t.27-.115q.114-.115.114-.269v-2.116H20.5q.154 0 .27-.115q.114-.115.114-.269t-.115-.27q-.115-.114-.269-.114h-2.116V13.5q0-.154-.115-.27q-.115-.114-.269-.114t-.27.115q-.114.115-.114.269v2.116H15.5q-.154 0-.27.115q-.114.115-.114.269t.115.27q.115.114.269.114zM18 20q-1.671 0-2.835-1.164Q14 17.67 14 16t1.165-2.835T18 12t2.836 1.165T22 16t-1.164 2.836T18 20M5 16.384V8.308q0-.384.172-.727q.171-.344.474-.566l5.385-4.077q.423-.323.966-.323t.972.323l5.385 4.078q.303.222.474.566q.172.345.172.73v.425q0 .223-.17.385t-.413.132q-1.425-.108-2.812.414q-1.388.523-2.401 1.536q-1.177 1.177-1.665 2.727t-.198 3.144q.067.373-.154.649t-.57.276H6.616q-.667 0-1.141-.475T5 16.386"></path>
+    </svg>
+  );
+};
+
+ 
+
+
+
+
  
 export const GuestsIcon: React.FC<IconSvgProps> = (props) => {
   const { width, height = 22 } = props;
