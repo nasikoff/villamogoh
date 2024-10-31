@@ -1,6 +1,7 @@
  
-import { ConditionerIcon } from "@/components/icons";
+import { CheckIcon, ClimatIcon, CofeIcon, ConditionerIcon, FridgeIcon, GameIcon, KitchenIcon, MicriIcon, ParkingIcon, TvIcon, WifiIcon } from "@/components/icons";
 import { Chip } from "@nextui-org/chip";
+import { Checkbox } from "@nextui-org/react";
  
 export const cottage = [
   {
@@ -10,10 +11,11 @@ export const cottage = [
     day:" / ночь", 
     href:"/all-cottage/cottage-one",
     title: "Сottege One",
-    square: "120 кв.м",
-    guests: "8",
-    conditioner:<Chip size="lg" variant="faded" startContent={<ConditionerIcon/>}><span className="pl-1">4</span></Chip>,
+    square: "120 м²",
+    guests: "8 гостей",
+    conditioner:<Chip size="lg" variant="light" startContent={<ConditionerIcon height={20}/>}><span className="pl-1">4</span></Chip>,
     description: "Сottege One в нашем комплексе предлагает вам непревзойденный комфорт и современные удобства. Внутри вас ждет стильный и функциональный интерьер, где каждая деталь продумана для вашего удобства. Современная мебель и бытовая техника обеспечат вам максимальный комфорт, а панорамные окна позволят наслаждаться потрясающими видами на величественные горы, создавая атмосферу умиротворения и гармонии", 
+    descriptionlite: "Сottege One - стильное жилье с панорамными окнами и современной мебелью, где каждая деталь продумана для вашего комфорта. Наслаждайтесь видами на горы и чувствуйте гармонию и умиротворение.",
     img: "/img/9.webp",
   },
   {
@@ -22,10 +24,11 @@ export const cottage = [
     title: "Сottege Two",
     href:"#",
     day:" / ночь",
-    square: "120 кв.м",
-    guests: "8",
-    conditioner:<Chip size="lg" variant="faded" startContent={<ConditionerIcon/>}><span className="pl-1">4</span></Chip>,
+    square: "120 м²",
+    guests: "8 гостей",
+    conditioner:<Chip size="lg" variant="light" startContent={<ConditionerIcon/>}><span className="pl-1">4</span></Chip>,
     description: "Сottege Two в нашем комплексе — это воплощение современного комфорта и роскоши. Внутри вас ждет элегантное и функциональное пространство, где каждая деталь продумана для вашего удобства. Современная мебель и бытовая техника высочайшего качества обеспечат вам максимальный комфорт, а панорамные окна откроют перед вами захватывающие виды на величественные горы, создавая атмосферу умиротворения и гармонии.", 
+    descriptionlite: "Сottage Two представляет собой оазис современного комфорта, где вас ждет элегантное пространство с панорамными видами на горы. Высококачественная мебель и бытовая техника обеспечат максимальный уровень удобства и роскошь." ,
     img: "/img/1.webp",
   },
   { 
@@ -33,17 +36,21 @@ export const cottage = [
     price: "₽900",
     day:" / час",
     href:"#",
-    square: "70 кв.м",
-    guests: "6",
+    square: "70 м²",
+    guests: "6 гостей",
     conditioner: "",
     title: "Russian Bathhouse",
     description: "Russian Bathhouse в нашем комплексе предлагает уютную и атмосферную парную с традиционными деревянными элементами. Внутри есть все необходимое для комфортного отдыха: войлочные шапки, веники, настои трав и эфирные масла.Russian Bathhouse — это не только гигиеническая процедура, но и оздоровительный ритуал, который помогает очистить поры, активизировать кровообращение и подарить ощущение легкости.",
+    descriptionlite: "Насладитесь расслабляющими процедурами в русской бане с вениками, войлочными шапками и ароматными настоями. Почувствуйте легкость и свежесть после посещения!",
     img: "/img/6.jpeg", 
     
   },
   
    
 ];
+
+
+ 
 
 export const PriceOne = [ cottage[0].price ];
 export const PriceTwo = [ cottage[1].price ];
@@ -62,10 +69,51 @@ export const GuestsTwo = [ cottage[1].guests ];
 export const GuestsRB = [ cottage[2].guests ];
 
 
-export const description = "Сottege One в нашем комплексе предлагает вам непревзойденный комфорт и современные удобства. Внутри вас ждет стильный и функциональный интерьер, где каждая деталь продумана для вашего удобства. Современная мебель и бытовая техника обеспечат вам максимальный комфорт, а панорамные окна позволят наслаждаться потрясающими видами на величественные горы, создавая атмосферу умиротворения и гармонии";
 
 
 
+export const comfort = [
+  {
+    title: "Парковка",
+    svg: <ParkingIcon height={16}/>, 
+  },
+  {
+    title: "TV",
+    svg: <TvIcon height={16}/>,   
+  },
+  {
+    title: "Wi-Fi",
+    svg: <WifiIcon height={16}/>,  
+  },
+  {
+    title: "Кондиционер",
+    svg: <ClimatIcon height={16}/>,   
+  },
+  {
+    title: "Развлечения",
+    svg: <GameIcon height={16}/>,   
+  },
+  {
+    title: "Микроволновка",
+    svg: <MicriIcon height={16}/>,     
+  },
+  {
+    title: "Холодильник",
+    svg: <FridgeIcon height={16}/>,    
+  },
+  {
+    title: "Кофемашина",
+    svg: <CofeIcon height={16}/>,  
+  },
+  {
+    title: "Приборы",
+    svg: <KitchenIcon height={16}/>,   
+  },
+  {
+    title: "Удобства",
+    svg: <CheckIcon height={16}/>,     
+  },
+];
 
 
 export const siteConfig = {
@@ -92,9 +140,11 @@ export const siteConfig = {
 };
 
 
+
+
 export const list = [
   {
-    title: "Потрясающие виды",
+    title: "Захватывающие виды",
     img: "/img/3.webp", 
   },
   {
@@ -106,7 +156,7 @@ export const list = [
     img: "/img/12.jpeg",  
   },
   {
-    title: "Индивидуальный подход",
+    title: "Уединение и спокойствие",
     img: "/img/14.jpeg",  
   },
    
