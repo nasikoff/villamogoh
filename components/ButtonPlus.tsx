@@ -23,12 +23,32 @@ const ButtonPlus = () => {
     } 
     else if (pathname == "/about") {
       setShowButton(false);
-    }  
-    
+    } 
+
+    else if (scrollY > 230 && pathname == "/all-cottage/cottage-one" && window.innerWidth > 400) {
+      setShowButton(false);
+    } 
+
+    else if (scrollY < 500 && pathname == "/all-cottage/cottage-one" && window.innerWidth < 400) {
+      setShowButton(false);
+    } 
+
     else {
       setShowButton(true);
     }
+
+
+  
+
+    
+
+
+
+
   };
+
+
+
 
   React.useEffect(() => {
     handleScroll();

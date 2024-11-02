@@ -7,7 +7,6 @@ import { FreeMode, Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
 import  IconWrapper  from "@/components/IconWrapper";
 import { list, listtwo, contacts } from "@/config/site";
-import Iframe from 'react-iframe'
 import NextLink from "next/link";
 import Swipe from "../components/animeicon/Swipe";
 import "swiper/css";
@@ -18,7 +17,6 @@ export default function Home() {
 
   return (
     <>
-   
     <section className="block md:hidden pt-8 md:pt-10">
       <span className={title()}>Добро пожаловать в&nbsp;</span>
       <br />
@@ -127,8 +125,8 @@ export default function Home() {
                   className="z-0 w-full h-full object-cover"
                   src="/img/11.webp"
                   />
-               <CardFooter className="justify-between py-1 absolute before:rounded-xl rounded-large bottom-1 ml-1 z-10">
-                  <Button className="text-tiny bg-black/20" variant="flat" color="default" radius="lg" size="sm">
+                 <CardFooter className="justify-between py-1 absolute before:rounded-xl rounded-large bottom-1 ml-1 z-10">
+                  <Button className="text-tiny text-white bg-white/20" variant="flat" color="default" radius="lg" size="sm">
                   Подробнее
                   </Button>
                </CardFooter>
@@ -137,17 +135,17 @@ export default function Home() {
          <div >
             <Card className="col-span-12 sm:col-span-4 h-[200px]">
                <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-                  <h4 className=" font-medium text-large uppercase">Мы здесь</h4>
+                  <h4 className=" font-medium text-black text-large uppercase">Мы здесь</h4>
                </CardHeader>
                <Image
                   isZoomed
                   removeWrapper
                   alt="Card background"
-                  className="z-0 w-full h-full object-cover"
+                  className="z-0 w-full h-full object-cover hue-rotate-60"
                   src="/img/maps.png"
                   />
                <CardFooter className="justify-between py-1 absolute before:rounded-xl rounded-large bottom-1 ml-1 z-10">
-                  <Button className="text-tiny text-white bg-black/20" variant="flat" color="default" radius="lg" size="sm">
+                  <Button className="text-tiny text-black bg-black/20" variant="flat" color="default" radius="lg" size="sm">
                   Построить маршрут
                   </Button>
                </CardFooter>
