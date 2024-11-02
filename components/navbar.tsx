@@ -47,9 +47,9 @@ export const Navbar = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
     >  
-            <div className="w-auto items-center justify-evenly flex gap-4 justify-start px-4 py-4    outline-none bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none">
+            <div className="w-auto items-center justify-evenly flex   justify-start px-4 py-4    outline-none bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none">
                   {siteConfig.navItems.map((item) => (
-                  <NavbarItem key={item.href} className="flex justify-center w-[60px]" style={{backdropFilter:"none"}}>
+                  <NavbarItem key={item.href} className="flex justify-center w-[60px] mx-[5px]" style={{backdropFilter:"none"}}>
                     <NextLink
                       className={pathUrl == item.href
                         ? "text-[#006fee] content-navi"
