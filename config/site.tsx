@@ -1,7 +1,7 @@
  
 import { CheckIcon, ClimatIcon, CofeIcon, ConditionerIcon, FridgeIcon, GameIcon, KitchenIcon, MicriIcon, ParkingIcon, TvIcon, WifiIcon } from "@/components/icons";
 import { Chip } from "@nextui-org/chip";
-import { Checkbox } from "@nextui-org/react";
+ 
  
 export const cottage = [
   {
@@ -140,8 +140,6 @@ export const siteConfig = {
 };
 
 
-
-
 export const list = [
   {
     title: "Захватывающие виды",
@@ -224,8 +222,4 @@ export const contacts = [
 ];
 
 
-
-
-
-
-
+ 

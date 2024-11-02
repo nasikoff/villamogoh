@@ -9,7 +9,7 @@ import React, { useState } from 'react';
 import "swiper/css";
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { BathRoomIcon, BedRoomIcon, BroneIcon, GuestsIcon, ParkingIcon, SquareIcon } from "@/components/icons";
+import { BathRoomIcon, BedRoomIcon, GuestsIcon, SquareIcon } from "@/components/icons";
 import LongText from "@/components/LongText";
 export default function CottageOnePage() {
 return (

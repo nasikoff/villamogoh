@@ -10,22 +10,21 @@ import { list, listtwo, contacts } from "@/config/site";
 import Iframe from 'react-iframe'
 import NextLink from "next/link";
 import Swipe from "../components/animeicon/Swipe";
-import Link from 'next/link'
 import "swiper/css";
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
- 
+import YandexMaps from "@/components/YandexMaps";
 export default function Home() {
+
   return (
     <>
-
+   
     <section className="block md:hidden pt-8 md:pt-10">
       <span className={title()}>Добро пожаловать в&nbsp;</span>
       <br />
       <span className={title({ color: "blue" })} style={{ fontFamily: "Audiowide", }}>VillaMogoh&nbsp;</span>
     </section>
-    
+
     <section className="flex pt-4 md:pt-10">
       <div className="hidden xl:block md:block lg:block sm:hidden flex-auto w-36 inline-block max-w-xl text-left justify-center">
          <span className={title()}>Добро пожаловать в&nbsp;</span>
@@ -157,7 +156,6 @@ export default function Home() {
       </div>
       </div>
    </section>
-
    <section className="pt-8 md:pt-10">
       
    <div className="flex flex-row">
@@ -310,17 +308,7 @@ export default function Home() {
       <div className="mt-5 flex flex-col md:flex-row">
           
      
-      <div className="flex-auto w-full md:w-64">
-      <Iframe url="https://yandex.ru/map-widget/v1/?um=constructor%3A6335f8acd1220368f602308808ddf0c3bfb498b2900e9700412d6e8337c173b6&amp;source=constructor"
-        width="100%" 
-        id=""
-        className="rounded-[20px] h-[300px] md:h-[450px]"
-        display="block"
-        position="relative"/>
-      </div>
-     
-          
-          
+      <YandexMaps/>          
       <div className="flex-auto w-full md:w-36 mt-5 pl-0 md:pl-16">
       {contacts.map((item, html) => (
                <Card key={html} className="rounded-none bg-transparent outline-none shadow-none divide-x">
