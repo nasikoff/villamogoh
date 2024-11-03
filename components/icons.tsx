@@ -558,7 +558,7 @@ export const CottageIcon: React.FC<IconSvgProps> = (props) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
         >
-    <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path fill="currentColor" fill-rule="evenodd" d="M11 14L25 4v40H11z" clip-rule="evenodd"/><path d="m25 13l14 10v21M4 44h40"/></g>
+    <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path fill="currentColor" fillRule="evenodd" d="M11 14L25 4v40H11z" clipRule="evenodd"/><path d="m25 13l14 10v21M4 44h40"/></g>
     </svg>
   );
 };
