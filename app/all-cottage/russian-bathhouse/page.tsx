@@ -45,7 +45,7 @@ return (
       </div>
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 pb-12">
        {comfortRB.map((item, html) => (
-         <div key={html} className="flex gap-2 items-center">{item.svg}{item.title}</div>
+         <div key={""} className="flex gap-2 items-center">{item.svg}{item.title}</div>
 
        ))}
       </div>
@@ -101,7 +101,7 @@ return (
 
 
          
-         <div key={html} className="flex gap-2 items-center">{item.svg}{item.title}</div>
+         <div key={""} className="flex gap-2 items-center">{item.svg}{item.title}</div>
 
 
 

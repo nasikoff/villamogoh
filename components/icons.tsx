@@ -506,7 +506,7 @@ export const WashIcon: React.FC<IconSvgProps> = (props) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M.5 8.5h13v2a3 3 0 0 1-3 3h-7a3 3 0 0 1-3-3v-2h0Zm7-6a2 2 0 0 0-4 0v6m4-4v1"/>
+<path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M.5 8.5h13v2a3 3 0 0 1-3 3h-7a3 3 0 0 1-3-3v-2h0Zm7-6a2 2 0 0 0-4 0v6m4-4v1"/>
     </svg>
   );
 };
@@ -541,7 +541,7 @@ export const TeaIcon: React.FC<IconSvgProps> = (props) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
         >
-    <defs><mask id="ipTTeapot0"><g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="M23.001 13c-7.3 0-13.458 5.07-15.379 12H38.38c-1.92-6.93-8.079-12-15.379-12"/><path fill="#555" d="M7.001 29.593c0 4.418 1.665 8.433 4.381 11.407H34.62c2.716-2.974 4.381-6.989 4.381-11.407c0-1.594-.217-3.134-.62-4.593H7.62C7.217 26.459 7 28 7 29.593"/><path d="M27 13v-2a4 4 0 0 0-4-4v0a4 4 0 0 0-4 4v2M7 28s-1.985-.131-3-2.5C2.5 22 5 20 6 17c.761-2.282-.793-3.986-1.58-4.67c-.252-.22-.42-.53-.42-.865v-.618c0-.489.354-.903.843-.92C5.878 9.887 7.663 9.996 9 11c2 1.5 3 6 3 6M9 41h28m2-16a5 5 0 1 0-4.584-7"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTTeapot0)"/>
+    <defs><mask id="ipTTeapot0"><g fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M23.001 13c-7.3 0-13.458 5.07-15.379 12H38.38c-1.92-6.93-8.079-12-15.379-12"/><path fill="#555" d="M7.001 29.593c0 4.418 1.665 8.433 4.381 11.407H34.62c2.716-2.974 4.381-6.989 4.381-11.407c0-1.594-.217-3.134-.62-4.593H7.62C7.217 26.459 7 28 7 29.593"/><path d="M27 13v-2a4 4 0 0 0-4-4v0a4 4 0 0 0-4 4v2M7 28s-1.985-.131-3-2.5C2.5 22 5 20 6 17c.761-2.282-.793-3.986-1.58-4.67c-.252-.22-.42-.53-.42-.865v-.618c0-.489.354-.903.843-.92C5.878 9.887 7.663 9.996 9 11c2 1.5 3 6 3 6M9 41h28m2-16a5 5 0 1 0-4.584-7"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTTeapot0)"/>
     </svg>
   );
 };
@@ -558,7 +558,7 @@ export const CottageIcon: React.FC<IconSvgProps> = (props) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
         >
-    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path fill="currentColor" fill-rule="evenodd" d="M11 14L25 4v40H11z" clip-rule="evenodd"/><path d="m25 13l14 10v21M4 44h40"/></g>
+    <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path fill="currentColor" fill-rule="evenodd" d="M11 14L25 4v40H11z" clip-rule="evenodd"/><path d="m25 13l14 10v21M4 44h40"/></g>
     </svg>
   );
 };
