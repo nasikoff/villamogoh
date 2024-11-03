@@ -48,7 +48,7 @@ export default function AboutPage() {
 
 
 
-                <Card>
+                <Card key={""}>
                   <CardHeader className="flex gap-3">
                   {item.svg}
                     <div className="flex flex-col">
