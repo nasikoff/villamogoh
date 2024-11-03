@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { DescriptionOne, DescriptionTwo, DescriptionRB } from '@/config/site';
+import { DescriptionOne, DescriptionTwo, DescriptionRB, DescriptionAbout } from '@/config/site';
 
 interface LongTextComponentProps {
-  descriptionType: 'one' | 'two' | 'three';
+  descriptionType: 'one' | 'two' | 'three' | 'four';
 }
 
 const LongTextComponent: React.FC<LongTextComponentProps> = ({ descriptionType }) => {
@@ -18,6 +18,9 @@ const LongTextComponent: React.FC<LongTextComponentProps> = ({ descriptionType }
       break;
     case 'three':
       description = DescriptionRB;
+      break;
+    case 'four':
+        description = DescriptionAbout;
       break;
     default:
       description = DescriptionOne;

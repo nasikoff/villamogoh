@@ -101,6 +101,7 @@ export default function Home() {
           </Card>
       <div className="mt-5 grid grid-cols-2 gap-4">
          <div>
+         <NextLink href={"/all-cottage/russian-bathhouse"}> 
             <Card className="col-span-12 sm:col-span-4 h-[200px]">
                <CardHeader className="absolute z-10 top-1 flex-col !items-start">
                   <p className="text-tiny text-white/60 uppercase font-bold"></p>
@@ -117,6 +118,7 @@ export default function Home() {
                    <Chip size="sm">Подробнее</Chip>
                </CardFooter>
             </Card>
+            </NextLink>
          </div>
          <div >
          <MapsButton text={""}/>
@@ -149,6 +151,8 @@ export default function Home() {
             className="mySwiper02"
             >
             <SwiperSlide className="max-w-[400px]">
+               
+            <NextLink href={"/all-cottage/cottage-one"}> 
                <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
                   <CardHeader className="absolute z-10 top-1 flex-col items-start">
                      <h4 className="text-white font-medium text-xl">Сottege One</h4>
@@ -158,7 +162,7 @@ export default function Home() {
                      removeWrapper
                      alt="Relaxing app background"
                      className="z-0 w-full h-full object-cover"
-                     src="/img/1.webp"
+                     src="/img/9.webp"
                      />
                   <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
                      <div className="flex flex-grow gap-2 items-center">
@@ -166,11 +170,15 @@ export default function Home() {
                            <h4 key={""} className="text-white font-bold text-xl">{PriceOne}<small className="text-white/80 font-normal"> / ночь</small></h4>
                         </div>
                      </div>
-                     <Button  radius="full" size="sm"><NextLink href="/all-cottage/cottage-one" >Подробнее</NextLink></Button>
+                      <Chip size="sm">Подробнее</Chip> 
                   </CardFooter>
                </Card>
+               </NextLink>
+
             </SwiperSlide>
             <SwiperSlide className="max-w-[400px]">
+
+            <NextLink href={"/all-cottage/cottage-two"}> 
                <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
                   <CardHeader className="absolute z-10 top-1 flex-col items-start">
                      <h4 className="text-white font-medium text-xl">Сottege Two</h4>
@@ -188,11 +196,15 @@ export default function Home() {
                            <h4 key={""} className="text-white font-bold text-xl">{PriceTwo}<small className="text-white/80 font-normal"> / ночь</small></h4>
                         </div>
                      </div>
-                     <Button radius="full" size="sm">Подробнее</Button>
+                     <Chip size="sm">Подробнее</Chip> 
                   </CardFooter>
                </Card>
+               </NextLink>
+
             </SwiperSlide>
             <SwiperSlide className="max-w-[400px]">
+
+            <NextLink href={"/all-cottage/russian-bathhouse"}> 
                <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
                   <CardHeader className="absolute z-10 top-1 flex-col items-start">
                      <h4 className="text-white font-medium text-xl">Russian Bathhouse</h4>
@@ -210,9 +222,12 @@ export default function Home() {
                            <h4 key={""} className="text-white font-bold text-xl">{PriceRB}<small className="text-white/80 font-normal"> / час</small></h4>
                         </div>
                      </div>
-                     <Button radius="full" size="sm">Подробнее</Button>
+                     <Chip size="sm">Подробнее</Chip> 
                   </CardFooter>
                </Card>
+               </NextLink>
+
+
             </SwiperSlide>
          </Swiper>
       </div>

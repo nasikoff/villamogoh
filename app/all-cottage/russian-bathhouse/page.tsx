@@ -1,5 +1,5 @@
 'use client'
-import { PriceOne, DescriptionOne, SquareOne, GuestsOne, comfort } from "@/config/site";
+import { PriceOne, DescriptionOne, SquareOne, GuestsOne, comfort, PriceRB, SquareRB, GuestsRB, comfortRB } from "@/config/site";
 import { title } from "@/components/primitives";
 import { Button, Card, Image, CardBody, CardFooter, CardHeader, CircularProgress, Dropdown, DropdownItem, DropdownMenu, DropdownSection, DropdownTrigger, Chip } from "@nextui-org/react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,41 +14,37 @@ import LongText from "@/components/LongText";
 import BookingButton from "@/components/BookingButton";
 
  
-export default function CottageOnePage() {
+export default function RussianBathhousePage() {
 return (
 <>
 <section className="block md:hidden pt-8 md:pt-10">
-   <span className={title()}>Cottage One</span>
+   <span className={title()}>Russian Bathhouse</span>
 </section>
 <section key={""} className="flex pt-8 md:pt-10 pb-24">
    <div className="hidden xl:block md:block lg:block sm:hidden flex-auto w-36 inline-block max-w-xl text-left justify-center">
-      <span className={title()}>Cottage One</span>
+      <span className={title()}>Russian Bathhouse</span>
       <p className="pt-2 opacity-60">Дагестан, с. Могох</p>
-      <h2 className="pt-4 pb-8 text-2xl font-bold">{PriceOne}<small className="opacity-60 font-normal"> / ночь</small></h2>
-        <BookingButton text={"Забронировать"}/>
+      <h2 className="pt-4 pb-8 text-2xl font-bold">{PriceRB}<small className="opacity-60 font-normal"> / час</small></h2>
+      
+      
+      <BookingButton text={"Забронировать"}/>
+
       <div className="pt-10 flex flex-row flex-wrap justify-left gap-5" >
          <div>
             <SquareIcon height={40}/>
-            <p className="mt-2 font-medium group-data-[selected=true]:text-warning">{SquareOne}</p>
+            <p className="mt-2 font-medium group-data-[selected=true]:text-warning">{SquareRB}</p>
          </div>
          <div>
             <GuestsIcon height={40}/>
-            <p className="mt-2 font-medium group-data-[selected=true]:text-warning">{GuestsOne}</p>
+            <p className="mt-2 font-medium group-data-[selected=true]:text-warning">{GuestsRB}</p>
          </div>
-         <div>
-            <BedRoomIcon height={40}/>
-            <p className="mt-2 font-medium group-data-[selected=true]:text-warning">3 спальни</p>
-         </div>
-         <div>
-            <BathRoomIcon height={40}/>
-            <p className="mt-2 font-medium group-data-[selected=true]:text-warning">1 ванная</p>
-         </div>
+          
       </div>
       <div className="w-full md:w-11/12 text-lg lg:text-lg pt-10 pb-12 font-normal text-default-500 block max-w-full">
-         <LongText descriptionType={"one"}/>
+         <LongText descriptionType={"three"}/>
       </div>
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 pb-12">
-       {comfort.map((item, html) => (
+       {comfortRB.map((item, html) => (
          <div key={html} className="flex gap-2 items-center">{item.svg}{item.title}</div>
 
        ))}
@@ -64,23 +60,7 @@ return (
       className="mySwiper01">
       <SwiperSlide>
          <img
-            src="/img/9.webp"
-            loading="lazy"
-            alt="xsx"
-            />
-         <CircularProgress className="swiper-lazy-preloader absolute top-[50%] left-[50%] border-none" aria-label="Loading..." />
-      </SwiperSlide>
-      <SwiperSlide>
-         <img
-            src="/img/10.webp"
-            loading="lazy"
-            alt="xsx"
-            />
-         <CircularProgress className="swiper-lazy-preloader absolute top-[50%] left-[50%] border-none" aria-label="Loading..." />
-      </SwiperSlide>
-      <SwiperSlide>
-         <img
-            src="/img/1.webp"
+            src="/img/6.jpeg"
             loading="lazy"
             alt="xsx"
             />
@@ -92,37 +72,41 @@ return (
       <div className="block md:hidden flex flex-col"> 
       
       <div className="flex flex-row pt-8">
-         <h2 className="text-xl md:text-2xl font-bold">{PriceOne}<small className="opacity-60 font-normal"> / ночь</small></h2>
+         <h2 className="text-xl md:text-2xl font-bold">{PriceRB}<small className="opacity-60 font-normal"> / ночь</small></h2>
       </div>
       <div className="flex flex-row justify-left gap-3 sm:gap-5 pt-8" >
          <div>
             <SquareIcon height={28}/>
-            <p className="mt-2 font-medium group-data-[selected=true]:text-warning">{SquareOne}</p>
+            <p className="mt-2 font-medium group-data-[selected=true]:text-warning">{SquareRB}</p>
          </div>
          <div>
             <GuestsIcon height={28}/>
-            <p className="mt-2 font-medium group-data-[selected=true]:text-warning">{GuestsOne}</p>
+            <p className="mt-2 font-medium group-data-[selected=true]:text-warning">{GuestsRB}</p>
          </div>
-         <div>
-            <BedRoomIcon height={28}/>
-            <p className="mt-2 font-medium group-data-[selected=true]:text-warning">3 спальни</p>
-         </div>
-         <div>
-            <BathRoomIcon height={28}/>
-            <p className="mt-2 font-medium group-data-[selected=true]:text-warning">1 ванная</p>
-         </div>
+         
       </div>
       <div>
       <div className="w-full md:w-11/12 text-lg lg:text-lg pt-8 pb-12 font-normal text-default-500 block max-w-full">
-         <LongText descriptionType={"one"}/>
+         <LongText descriptionType={"three"}/>
       </div>
       </div>
 
 
       <div className="grid comfort gap-4 pb-12">
-      {comfort.map((item, html) => (
+      {comfortRB.map((item, html) => (
+         
+
+
+
+
+
          
          <div key={html} className="flex gap-2 items-center">{item.svg}{item.title}</div>
+
+
+
+
+
 
       ))}
       </div>

@@ -437,5 +437,130 @@ export const BroneIcon2: React.FC<IconSvgProps> = (props) => {
     </svg>
   );
 };
+
+
+
+export const BroomIcon: React.FC<IconSvgProps> = (props) => {
+  const { width, height = 22 } = props;
+
+  return (
+    <svg
+      fill="none"
+      height={height}
+      viewBox="0 0 24 24"
+      width={width}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+<path fill="currentColor" d="m19.36 2.72l1.42 1.42l-5.72 5.71c1.07 1.54 1.22 3.39.32 4.59L9.06 8.12c1.2-.9 3.05-.75 4.59.32zM5.93 17.57c-2.01-2.01-3.24-4.41-3.58-6.65l4.88-2.09l7.44 7.44l-2.09 4.88c-2.24-.34-4.64-1.57-6.65-3.58"/>
+    </svg>
+  );
+};
+
+
+export const BathIcon: React.FC<IconSvgProps> = (props) => {
+  const { width, height = 22 } = props;
+  return (
+    <svg
+      fill="none"
+      height={height}
+      viewBox="0 0 24 24"
+      width={width}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+<path fill="currentColor" d="M19.25 9.5q-.725 0-1.237-.525t-.513-1.25t.513-1.237t1.237-.513t1.238.513T21 7.725t-.513 1.25t-1.237.525m-14.5 0q-.725 0-1.237-.525T3 7.725t.513-1.237t1.237-.513t1.238.513t.512 1.237t-.513 1.25T4.75 9.5M9.075 8q-.3 0-.475-.237t-.15-.538q.05-.575-.125-1.075t-.575-.975q-.675-.8-.95-1.612T6.6 1.8q.05-.35.288-.575T7.475 1q.3 0 .5.238t.175.562q-.05.725.125 1.3t.6 1.1q.65.775.913 1.488T10 7.2q-.025.35-.3.575T9.075 8m3 0q-.3 0-.475-.238t-.15-.537q.05-.575-.125-1.075t-.575-.975q-.675-.8-.95-1.612T9.6 1.8q.05-.35.3-.575T10.5 1q.3 0 .488.25t.162.575q-.05.75.125 1.313t.6 1.062q.65.775.913 1.488T13 7.2q-.025.35-.3.575T12.075 8m3 0q-.3 0-.475-.238t-.15-.537q.05-.575-.125-1.075t-.575-.975q-.675-.8-.95-1.612T12.6 1.8q.05-.35.3-.575T13.5 1q.3 0 .488.25t.162.575q-.05.75.125 1.313t.6 1.062q.65.775.913 1.488T16 7.2q-.025.35-.3.575T15.075 8M2 17v-3q0-.425.288-.712T3 13v-.625q0-.775.538-1.325t1.312-.55q.4 0 .763.188t.637.462l1.125 1.275q.15.15.313.3t.337.275h7.95q.2-.125.35-.275l.3-.3l1.125-1.275q.275-.275.638-.462t.762-.188q.775 0 1.313.55T21 12.375V13q.425 0 .713.288T22 14v3zm2 5q-.825 0-1.412-.587T2 20v-1h20v1q0 .825-.587 1.413T20 22z"/>
+    </svg>
+  );
+};
+ 
+
+
+export const WoodIcon: React.FC<IconSvgProps> = (props) => {
+  const { width, height = 22 } = props;
+
+  return (
+    <svg
+      fill="none"
+      height={height}
+      viewBox="0 0 512 512"
+      width={width}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+<path fill="currentColor" d="m100.3 19.86l-36.62 2.02l-.72 13.1a16 16 0 0 1 5.18-.86a16 16 0 0 1 16 16a16 16 0 0 1-16 16a16 16 0 0 1-16-16a16 16 0 0 1 2.38-8.4l-6.44-18.98l-15.63.86l-.78 377.3l23.01-.8l.55-105.9l12.23 105.5l46.84-1.6zm353.5 11.6L121.5 41.71l2.6 58.39L485 85.15l3.5-36.38zm7 72.74l-25.4 1l-15 39l-13.2-37.8l-22.5 1l-2.8 83.3l7.6 34l-9.5 24.1l-7.5 226.6l14.1.7l11.3-33.5l11.3 34.7l4.7.3l14.1-21.1l4.6 22l18.3 1zm-61.1 299a16 16 0 0 1 16 16a16 16 0 0 1-16 16a16 16 0 0 1-16-16a16 16 0 0 1 16-16m85.3.8l-14.1.5l-1.9 75.2l16.2-.1zm-128.3 4.2l-93 3l-43.7 20.3l-22-18.1l-174.24 5.7l-.28 63.8l330.82-2.3l1.3-40c-12.9-.3-87.9-2.3-89.6-2.3c-1.6 0 69-9.9 90.1-13zM103 431.7a16 16 0 0 1 16 16a16 16 0 0 1-16 16a16 16 0 0 1-15.96-16a16 16 0 0 1 15.96-16m-51.48.3a16 16 0 0 1 16 16a16 16 0 0 1-16 16a16 16 0 0 1-16-16a16 16 0 0 1 16-16"/>
+    </svg>
+  );
+};
+
+
+export const WashIcon: React.FC<IconSvgProps> = (props) => {
+  const { width, height = 22 } = props;
+
+  return (
+    <svg
+      fill="none"
+      height={height}
+      viewBox="0 0 14 14"
+      width={width}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M.5 8.5h13v2a3 3 0 0 1-3 3h-7a3 3 0 0 1-3-3v-2h0Zm7-6a2 2 0 0 0-4 0v6m4-4v1"/>
+    </svg>
+  );
+};
+ 
+export const Bath2Icon: React.FC<IconSvgProps> = (props) => {
+  const { width, height = 22 } = props;
+
+  return (
+    <svg
+      fill="none"
+      height={height}
+      viewBox="0 0 24 24"
+      width={width}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+    <path fill="currentColor" d="M9.001 17.77q.328 0 .548-.222t.22-.55t-.221-.547t-.55-.22t-.547.221t-.22.55t.221.547t.55.22m3 0q.327 0 .547-.221t.22-.55t-.221-.547t-.55-.22t-.547.221t-.22.55t.221.547t.55.22m3 0q.327 0 .547-.221t.22-.55t-.221-.547t-.55-.22t-.547.221t-.22.55t.221.547t.55.22m-6-3q.327 0 .547-.221t.22-.55t-.221-.547t-.55-.22t-.547.221t-.22.55t.221.547t.55.22m3 0q.327 0 .547-.221t.22-.55t-.221-.547t-.55-.22t-.547.221t-.22.55t.221.547t.55.22m3 0q.327 0 .547-.221t.22-.55t-.221-.547t-.55-.22t-.547.221t-.22.55t.221.547t.55.22M12 6.616q-1.71 0-2.96 1.154t-1.405 2.846q-.039.328.199.549q.238.22.589.22h7.154q.351 0 .589-.22t.2-.55q-.154-1.69-1.405-2.845T12 6.616M4.616 21q-.691 0-1.153-.462T3 19.385V4.615q0-.69.463-1.152T4.615 3h14.77q.69 0 1.152.463T21 4.616v14.769q0 .69-.463 1.153T19.385 21z"/>
+    </svg>
+  );
+};
+
+
+export const TeaIcon: React.FC<IconSvgProps> = (props) => {
+  const { width, height = 22 } = props;
+
+  return (
+    <svg
+      fill="none"
+      height={height}
+      viewBox="0 0 48 48"
+      width={width}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+        >
+    <defs><mask id="ipTTeapot0"><g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="M23.001 13c-7.3 0-13.458 5.07-15.379 12H38.38c-1.92-6.93-8.079-12-15.379-12"/><path fill="#555" d="M7.001 29.593c0 4.418 1.665 8.433 4.381 11.407H34.62c2.716-2.974 4.381-6.989 4.381-11.407c0-1.594-.217-3.134-.62-4.593H7.62C7.217 26.459 7 28 7 29.593"/><path d="M27 13v-2a4 4 0 0 0-4-4v0a4 4 0 0 0-4 4v2M7 28s-1.985-.131-3-2.5C2.5 22 5 20 6 17c.761-2.282-.793-3.986-1.58-4.67c-.252-.22-.42-.53-.42-.865v-.618c0-.489.354-.903.843-.92C5.878 9.887 7.663 9.996 9 11c2 1.5 3 6 3 6M9 41h28m2-16a5 5 0 1 0-4.584-7"/></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTTeapot0)"/>
+    </svg>
+  );
+};
+
+export const CottageIcon: React.FC<IconSvgProps> = (props) => {
+  const { width, height = 22 } = props;
+
+  return (
+    <svg
+      fill="none"
+      height={height}
+      viewBox="0 0 48 48"
+      width={width}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+        >
+    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path fill="currentColor" fill-rule="evenodd" d="M11 14L25 4v40H11z" clip-rule="evenodd"/><path d="m25 13l14 10v21M4 44h40"/></g>
+    </svg>
+  );
+};
  
  

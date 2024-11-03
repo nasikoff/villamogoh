@@ -34,6 +34,25 @@ const ButtonPlus = () => {
       setShowButton(false);
     } 
 
+    else if (scrollY > 230 && pathname == "/all-cottage/cottage-two" && window.innerWidth > 400) {
+      setShowButton(false);
+    } 
+
+    else if (scrollY < 500 && pathname == "/all-cottage/cottage-two" && window.innerWidth < 400) {
+      setShowButton(false);
+    } 
+
+
+    else if (scrollY > 230 && pathname == "/all-cottage/russian-bathhouse" && window.innerWidth > 400) {
+      setShowButton(false);
+    } 
+
+    else if (scrollY < 500 && pathname == "/all-cottage/russian-bathhouse" && window.innerWidth < 400) {
+      setShowButton(false);
+    } 
+
+
+
     else {
       setShowButton(true);
     }
