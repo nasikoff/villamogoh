@@ -207,7 +207,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                   </Card>
                 </ModalBody>
                 <ModalFooter className='pb-8 pt-0'>
-                  <div>Прежде чем совершить бронирование, рекомендуем внимательно изучить <div onClick={openTermsModal} className="text-warning underline">условия проживания</div></div>
+                  <div>Прежде чем совершить бронирование, рекомендуем внимательно изучить</div>
                 </ModalFooter>
                
               </>
@@ -431,7 +431,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                   </Card>
                 </ModalBody>
                 <ModalFooter className='pb-8 pt-0'>
-                  <div>Прежде чем совершить бронирование, рекомендуем внимательно изучить <div onClick={openTermsModal} className="text-warning underline">условия проживания</div></div>
+                  <div>Прежде чем совершить бронирование, рекомендуем внимательно изучить</div>
                 </ModalFooter>
                
               </>
@@ -516,7 +516,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                   </Card>
                 </ModalBody>
                 <ModalFooter className='pb-8 pt-0'>
-                  <div>Прежде чем совершить бронирование, рекомендуем внимательно изучить <div onClick={openTermsModal} className="text-warning underline">условия проживания</div></div>
+                  <div>Прежде чем совершить бронирование, рекомендуем внимательно изучить</div>
                 </ModalFooter>
                
               </>
