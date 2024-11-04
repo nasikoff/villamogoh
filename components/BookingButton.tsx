@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import { Button } from "@nextui-org/button";
-import { Dropdown, DropdownTrigger, Image, DropdownMenu, DropdownItem, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, Card, CardBody, CardFooter, CardHeader, Divider, Link, cn, Listbox, ListboxItem, ScrollShadow, Chip } from "@nextui-org/react";
+import { Dropdown, DropdownTrigger, Image, DropdownMenu, DropdownItem, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, Card, CardBody, CardFooter, CardHeader, Divider, Link, cn, Listbox, ListboxItem, ScrollShadow, Chip, BreadcrumbItem } from "@nextui-org/react";
 import { BroneIcon2, PhoneIcon, WhatsappIcon, YandexIcon } from "./icons";
 import { useDisclosure } from "@nextui-org/react";
 import { cottage, PriceOne } from '@/config/site';
@@ -206,7 +206,11 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                   </Card>
                 </ModalBody>
                 <ModalFooter className='pb-8 pt-0 flex-col gap-0'>
-                   Прежде чем совершить бронирование, рекомендуем внимательно изучить <Chip variant="light" onClick={openTermsModal} className="px-0 text-warning underline  w-min text-md  ">условия проживания</Chip> 
+                   Прежде чем совершить бронирование, рекомендуем внимательно изучить
+                   <Button className='mt-2' onClick={openTermsModal} color="warning">
+                   условия проживания
+                   </Button>   
+                    
                 </ModalFooter>
               </>
           </ModalContent>
@@ -424,7 +428,13 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
 
                   </Card>
                 </ModalBody>
-               
+                <ModalFooter className='pb-8 pt-0 flex-col gap-0'>
+                   Прежде чем совершить бронирование, рекомендуем внимательно изучить
+                   <Button className='mt-2' onClick={openTermsModal} color="warning">
+                   условия проживания
+                   </Button>   
+                    
+                </ModalFooter>
                
               </>
           </ModalContent>
@@ -505,7 +515,13 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
 
                   </Card>
                 </ModalBody>
-                
+                <ModalFooter className='pb-8 pt-0 flex-col gap-0'>
+                   Прежде чем совершить бронирование, рекомендуем внимательно изучить
+                   <Button className='mt-2' onClick={openTermsModal} color="warning">
+                   условия проживания
+                   </Button>   
+                    
+                </ModalFooter>
                
               </>
 
