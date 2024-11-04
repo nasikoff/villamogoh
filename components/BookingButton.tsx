@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import { Button } from "@nextui-org/button";
-import { Dropdown, DropdownTrigger, Image, DropdownMenu, DropdownItem, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, Card, CardBody, CardFooter, CardHeader, Divider, Link, cn, Listbox, ListboxItem, ScrollShadow } from "@nextui-org/react";
+import { Dropdown, DropdownTrigger, Image, DropdownMenu, DropdownItem, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, Card, CardBody, CardFooter, CardHeader, Divider, Link, cn, Listbox, ListboxItem, ScrollShadow, Chip } from "@nextui-org/react";
 import { BroneIcon2, PhoneIcon, WhatsappIcon, YandexIcon } from "./icons";
 import { useDisclosure } from "@nextui-org/react";
 import { cottage, PriceOne } from '@/config/site';
@@ -206,7 +206,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                   </Card>
                 </ModalBody>
                 <ModalFooter className='pb-8 pt-0'>
-                   Прежде чем совершить бронирование, рекомендуем внимательно изучить <span onClick={openTermsModal} className="text-warning underline">условия проживания</span> 
+                   Прежде чем совершить бронирование, рекомендуем внимательно изучить <Chip onClick={openTermsModal} className="text-warning underline">условия проживания</Chip> 
                 </ModalFooter>
               </>
           </ModalContent>
