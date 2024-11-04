@@ -114,7 +114,94 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                       </div>
                       <h1 className="font-bold">{cottage[0].price}<small className="opacity-60 font-normal"> / ночь</small></h1>
                     </CardHeader>
-             
+                    <CardBody>
+                      <h1 className='font-bold'>Проверить наличие мест</h1>
+                      <div>
+                      <Listbox
+                          aria-label="User Menu"
+                          
+                          className="px-0 py-3 gap-0 divide-y divide-default-300/50 dark:divide-default-100/80 bg-content1  overflow-visible"
+                          itemClasses={{
+                            base: "px-3 first:rounded-t-medium last:rounded-b-medium rounded-none gap-3 h-12 data-[hover=true]:bg-default-100/80",
+                          }}
+                        >
+                      <ListboxItem
+                        key="issues"
+                        endContent={<ItemCounter />}
+                        href="#"
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                       Яндекс Путешествия
+                      </ListboxItem>
+                      <ListboxItem
+                        key="pull_requests"
+                        endContent={<ItemCounter />}
+                        href="#"
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                        Островок
+                      </ListboxItem>
+                      <ListboxItem
+                        key="pull_requests"
+                        endContent={<ItemCounter />}
+                        href="#"
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                        Суточно.ру
+                      </ListboxItem>
+                      <ListboxItem
+                        key="pull_requests"
+                        endContent={<ItemCounter />}
+                        href="#"
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                        Авито
+                      </ListboxItem>
+                      <ListboxItem
+                        key="pull_requests"
+                        endContent={<ItemCounter />}
+                        href="#"
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                       OneTwoTrip
+                      </ListboxItem>
+                      <ListboxItem
+                        key="pull_requests"
+                        endContent={<ItemCounter />}
+                        href="#"
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                        Bronevik/MTC
+                      </ListboxItem>
+
+                          </Listbox>
+                        </div>
+
+                    </CardBody>
 
                   </Card>
                 </ModalBody>
@@ -205,9 +292,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                   </ol>
             </ScrollShadow>
               </ModalBody>
-              <ModalFooter className='pb-8 pt-2 font-normal'>
-                  <div>Следуя этим правилам, вы способствуете созданию комфортной и безопасной атмосферы для всех гостей. Приятного отдыха!</div>
-                </ModalFooter>
+            
         
             </>
       
@@ -337,9 +422,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
 
                   </Card>
                 </ModalBody>
-                <ModalFooter className='pb-8 pt-0'>
-                  <div>Прежде чем совершить бронирование, рекомендуем внимательно изучить <div onClick={openTermsModal} className="text-warning underline">условия проживания</div></div>
-                </ModalFooter>
+                
                
               </>
           </ModalContent>
@@ -420,11 +503,9 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
 
                   </Card>
                 </ModalBody>
-                <ModalFooter className='pb-8 pt-0'>
-                  <div>Прежде чем совершить бронирование, рекомендуем внимательно изучить <div onClick={openTermsModal} className="text-warning underline">условия проживания</div></div>
-                </ModalFooter>
-               
+          
               </>
+
           </ModalContent>
         </Modal>
           
