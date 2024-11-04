@@ -205,7 +205,9 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
 
                   </Card>
                 </ModalBody>
-                
+                <ModalFooter className='pb-8 pt-0'>
+                   Прежде чем совершить бронирование, рекомендуем внимательно изучить <span onClick={openTermsModal} className="text-warning underline">условия проживания</span> 
+                </ModalFooter>
               </>
           </ModalContent>
         </Modal>
