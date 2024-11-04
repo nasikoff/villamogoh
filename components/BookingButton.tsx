@@ -205,8 +205,8 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
 
                   </Card>
                 </ModalBody>
-                <ModalFooter className='pb-8 pt-0'>
-                   Прежде чем совершить бронирование, рекомендуем внимательно изучить <Chip onClick={openTermsModal} className="text-warning underline">условия проживания</Chip> 
+                <ModalFooter className='pb-8 pt-0 flex-col gap-0'>
+                   Прежде чем совершить бронирование, рекомендуем внимательно изучить <Chip variant="light" onClick={openTermsModal} className="px-0 text-warning underline  w-min text-md  ">условия проживания</Chip> 
                 </ModalFooter>
               </>
           </ModalContent>
