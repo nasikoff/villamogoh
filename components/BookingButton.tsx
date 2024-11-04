@@ -205,7 +205,9 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
 
                   </Card>
                 </ModalBody>
-                
+                <ModalFooter className='pb-8 pt-0'>
+                   Прежде чем совершить бронирование, рекомендуем внимательно изучить <div onClick={openTermsModal} className="text-warning underline">условия проживания</div> 
+                </ModalFooter>
               </>
           </ModalContent>
         </Modal>
@@ -290,7 +292,9 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                   </ol>
             </ScrollShadow>
               </ModalBody>
-            
+              <ModalFooter className='pb-8 pt-2 font-normal'>
+                   Следуя этим правилам, вы способствуете созданию комфортной и безопасной атмосферы для всех гостей. Приятного отдыха!
+                </ModalFooter>
         
             </>
       
@@ -420,7 +424,9 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
 
                   </Card>
                 </ModalBody>
-                
+                <ModalFooter className='pb-8 pt-0'>
+                   Прежде чем совершить бронирование, рекомендуем внимательно изучить <div onClick={openTermsModal} className="text-warning underline">условия проживания</div> 
+                </ModalFooter>
                
               </>
           </ModalContent>
@@ -501,7 +507,10 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
 
                   </Card>
                 </ModalBody>
-          
+                <ModalFooter className='pb-8 pt-0'>
+                  Прежде чем совершить бронирование, рекомендуем внимательно изучить <div onClick={openTermsModal} className="text-warning underline">условия проживания</div> 
+                </ModalFooter>
+               
               </>
 
           </ModalContent>
