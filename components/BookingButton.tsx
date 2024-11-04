@@ -1,8 +1,12 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { Button } from "@nextui-org/button";
-import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader } from "@nextui-org/react";
-import { BroneIcon2 } from "./icons";
+import { Dropdown, DropdownTrigger, Image, DropdownMenu, DropdownItem, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, Card, CardBody, CardFooter, CardHeader, Divider, Link, cn, Listbox, ListboxItem, ScrollShadow } from "@nextui-org/react";
+import { BroneIcon2, PhoneIcon, WhatsappIcon, YandexIcon } from "./icons";
 import { useDisclosure } from "@nextui-org/react";
+import { cottage, PriceOne } from '@/config/site';
+import YandexMaps from './YandexMaps';
+import IconWrapper from './IconWrapper';
+import { ItemCounter } from './ItemCounter';
 
 interface BookingButtonProps {
   text: string;
@@ -37,7 +41,15 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
   const modal1Disclosure = useDisclosure();
   const modal2Disclosure = useDisclosure();
   const modal3Disclosure = useDisclosure();
+  const [termsModalDisclosure, setTermsModalDisclosure] = useState({ isOpen: false });
+  const openTermsModal = () => {
+    setTermsModalDisclosure({ isOpen: true });
+  };
 
+  const closeTermsModal = () => {
+    setTermsModalDisclosure({ isOpen: false });
+  };
+  
   const handleItemClick = (key: string) => {
     if (key === "new") {
       modal1Disclosure.onOpen(); // Открываем модальное окно 1
@@ -70,82 +82,456 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
       </Dropdown>
 
       {/* Модальное окно 1 */}
-      <Modal isOpen={modal1Disclosure.isOpen} onClose={modal1Disclosure.onClose}>
+
+      {cottage.map((item, html) => (
+
+      <>
+        <Modal size={"xl"} key={""} isOpen={modal1Disclosure.isOpen} onClose={modal1Disclosure.onClose}
+        motionProps={{
+          initial: { y: 60, opacity: 0 },
+          animate: { y: 0, opacity: 1 },
+          exit: { y: 60, opacity: 0 },
+ 
+        }}
+        >
+          <ModalContent>
+            {() => (
+              <>
+                <ModalHeader className="flex flex-col gap-1 px-4">Вы бронируете</ModalHeader>
+                <ModalBody className='py-0 px-1'>
+                  <Card className='shadow-none '>
+                    <CardHeader className="justify-between">
+                      <div className="flex gap-5">
+                        <Image
+                          alt="nextui logo"
+                          height={40}
+                          radius="sm"
+                          src={cottage[0].img}
+                          width={40} />
+                        <div className="flex flex-col">
+                          <p className="text-md">{cottage[0].name}</p>
+                          <p className="text-small text-default-500">{cottage[0].address}</p>
+                        </div>
+                      </div>
+                      <h1 className="font-bold">{cottage[0].price}<small className="opacity-60 font-normal"> / ночь</small></h1>
+                    </CardHeader>
+                    <CardBody>
+                      <h1 className='font-bold'>Проверить наличие мест</h1>
+                      <div>
+                      <Listbox
+                          aria-label="User Menu"
+                          
+                          className="px-0 py-3 gap-0 divide-y divide-default-300/50 dark:divide-default-100/80 bg-content1  overflow-visible"
+                          itemClasses={{
+                            base: "px-3 first:rounded-t-medium last:rounded-b-medium rounded-none gap-3 h-12 data-[hover=true]:bg-default-100/80",
+                          }}
+                        >
+                      <ListboxItem
+                        key="issues"
+                        endContent={<ItemCounter />}
+                        href="#"
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                       Яндекс Путешествия
+                      </ListboxItem>
+                      <ListboxItem
+                        key="pull_requests"
+                        endContent={<ItemCounter />}
+                        href="#"
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                        Островок
+                      </ListboxItem>
+                      <ListboxItem
+                        key="pull_requests"
+                        endContent={<ItemCounter />}
+                        href="#"
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                        Суточно.ру
+                      </ListboxItem>
+                      <ListboxItem
+                        key="pull_requests"
+                        endContent={<ItemCounter />}
+                        href="#"
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                        Авито
+                      </ListboxItem>
+                      <ListboxItem
+                        key="pull_requests"
+                        endContent={<ItemCounter />}
+                        href="#"
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                       OneTwoTrip
+                      </ListboxItem>
+                      <ListboxItem
+                        key="pull_requests"
+                        endContent={<ItemCounter />}
+                        href="#"
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                        Bronevik/MTC
+                      </ListboxItem>
+
+                          </Listbox>
+                        </div>
+
+                    </CardBody>
+
+                  </Card>
+                </ModalBody>
+                <ModalFooter className='pb-8 pt-0'>
+                  <div>Прежде чем совершить бронирование, рекомендуем внимательно изучить <div onClick={openTermsModal} className="text-warning underline">условия проживания</div></div>
+                </ModalFooter>
+               
+              </>
+            )}
+          </ModalContent>
+        </Modal>
+
+
+
+
+        <Modal size={"xl"} key={""} scrollBehavior={"inside"} isOpen={termsModalDisclosure.isOpen} onClose={closeTermsModal}
+          motionProps={{
+            initial: { y: 60, opacity: 0 },
+            animate: { y: 0, opacity: 1 },
+            exit: { y: 60, opacity: 0 },
+           
+          }}
+        >
         <ModalContent>
-          {(onClose) => (
+          
             <>
-              <ModalHeader className="flex flex-col gap-1">Вы бронируете номер 1</ModalHeader>
-              <ModalBody>
-                <p> 
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
+              <ModalHeader className="flex flex-col gap-1 px-4">Условия проживания</ModalHeader>
+              
+              <ModalBody className='py-0 px-5'>
+              <ScrollShadow>
+                  <ol className="list-decimal pl-5 space-y-3">
+                      <li>Чистота и порядок   
+                        <ul className="list-disc mt-1 pl-5 space-y-3">
+                            <li>Сохраняйте чистоту в вашем домике и на территории базы.</li>
+                            <li>Мусор выбрасывайте в контейнеры и убирайте за собой.</li>
+                        </ul>
+                      </li>
+                      <li>Курение  
+                        <ul className="list-disc mt-1 pl-5 space-y-3">
+                            <li>Курение разрешено только на специально отведенных местах.</li>
+                            <li>Запрещено курить внутри домиков и общественных помещений.</li>
+                        </ul>
+                      </li>
+                      <li>Тишина и спокойствие  
+                        <ul className="list-disc mt-1 pl-5 space-y-3">
+                            <li>После 22:00 поддерживайте тишину, уважая отдых других гостей.</li>
+                        </ul>
+                      </li>
+                      <li>Питомцы  
+                        <ul className="list-disc mt-1 pl-5 space-y-3">
+                            <li>Проживание с питомцами строго запрещено.</li>
+                        </ul>
+                      </li>
+                      <li>Использование оборудования  
+                        <ul className="list-disc mt-1 pl-5 space-y-3">
+                            <li>Внимательно следуйте инструкциям по использованию оборудования.</li>
+                            <li>После использования выключайте технику и экономьте ресурсы.</li>
+                        </ul>
+                      </li>
+                      <li>Пожарная безопасность  
+                        <ul className="list-disc mt-1 pl-5 space-y-3">
+                            <li>Будьте внимательны при обращении с открытым огнем.</li>
+                            <li>Ознакомьтесь с расположением средств пожаротушения на базе.</li>
+                        </ul>
+                      </li>
+
+                      <li>Запрет на фейерверки  
+                        <ul className="list-disc mt-1 pl-5 space-y-3">
+                            <li>Использование фейерверков и пиротехники запрещено на территории базы.</li>
+                        </ul>
+                      </li>
+
+                      <li>Безопасность  
+                        <ul className="list-disc mt-1 pl-5 space-y-3">
+                            <li>Закрывайте окна и двери при выходе из домика.</li>
+                            <li>Храните ценные вещи в безопасном месте.</li>
+                        </ul>
+                      </li>
+                      <li>Уважение к природе  
+                        <ul className="list-disc mt-1 pl-5 space-y-3">
+                            <li>Сохраняйте чистоту природы, не бросайте мусор.</li>
+                            <li>Берегите окружающую природу и животных.</li>
+                        </ul>
+                      </li>
+                      <li>Обратная связь  
+                        <ul className="list-disc mt-1 pl-5 space-y-3">
+                            <li>Если у вас есть комментарии или предложения, пожалуйста, сообщите администрации базы ВиллаМогох.</li>
+                            <li>Мы ценим ваше мнение и стремимся обеспечить лучший сервис для наших гостей.</li>
+                        </ul>
+                      </li>
+                  </ol>
+            </ScrollShadow>
               </ModalBody>
-              <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
-                  Close
-                </Button>
-                <Button color="primary" onPress={onClose}>
-                  Action
-                </Button>
-              </ModalFooter>
+              
+              <ModalFooter className='pb-8 pt-2 font-normal'>
+                  <div>Следуя этим правилам, вы способствуете созданию комфортной и безопасной атмосферы для всех гостей. Приятного отдыха!</div>
+                </ModalFooter>
+        
             </>
-          )}
+      
         </ModalContent>
       </Modal>
 
-     {/* Модальное окно 1 */}
-     <Modal isOpen={modal2Disclosure.isOpen} onClose={modal2Disclosure.onClose}>
-        <ModalContent>
-          {(onClose) => (
-            <>
-              <ModalHeader className="flex flex-col gap-1">Вы бронируете номер 2</ModalHeader>
-              <ModalBody>
-                <p> 
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
-              </ModalBody>
-              <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
-                  Close
-                </Button>
-                <Button color="primary" onPress={onClose}>
-                  Action
-                </Button>
-              </ModalFooter>
-            </>
-          )}
-        </ModalContent>
-      </Modal>
 
-      {/* Модальное окно 3 */}
-      <Modal isOpen={modal3Disclosure.isOpen} onClose={modal3Disclosure.onClose}>
-        <ModalContent>
-          {(onClose) => (
-            <>
-              <ModalHeader className="flex flex-col gap-1">Вы бронируете номер 3</ModalHeader>
-              <ModalBody>
-                <p> 
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                </p>
-              </ModalBody>
-              <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
-                  Close
-                </Button>
-                <Button color="primary" onPress={onClose}>
-                  Action
-                </Button>
-              </ModalFooter>
-            </>
-          )}
-        </ModalContent>
-      </Modal>
+
+
+
+      <Modal size={"xl"} key={""} isOpen={modal2Disclosure.isOpen} onClose={modal2Disclosure.onClose}
+        motionProps={{
+          initial: { y: 60, opacity: 0 },
+          animate: { y: 0, opacity: 1 },
+          exit: { y: 60, opacity: 0 },
+ 
+        }}
+        >
+          <ModalContent>
+            {() => (
+              <>
+                <ModalHeader className="flex flex-col gap-1 px-4">Вы бронируете</ModalHeader>
+                <ModalBody className='py-0 px-1'>
+                  <Card className='shadow-none '>
+                    <CardHeader className="justify-between">
+                      <div className="flex gap-5">
+                        <Image
+                          alt="nextui logo"
+                          height={40}
+                          radius="sm"
+                          src={cottage[1].img}
+                          width={40} />
+                        <div className="flex flex-col">
+                          <p className="text-md">{cottage[1].name}</p>
+                          <p className="text-small text-default-500">{cottage[0].address}</p>
+                        </div>
+                      </div>
+                      <h1 className="font-bold">{cottage[1].price}<small className="opacity-60 font-normal"> / ночь</small></h1>
+                    </CardHeader>
+                    <CardBody>
+                      <h1 className='font-bold'>Проверить наличие мест</h1>
+                      <div>
+                      <Listbox
+                          aria-label="User Menu"
+                          
+                          className="px-0 py-3 gap-0 divide-y divide-default-300/50 dark:divide-default-100/80 bg-content1  overflow-visible"
+                          itemClasses={{
+                            base: "px-3 first:rounded-t-medium last:rounded-b-medium rounded-none gap-3 h-12 data-[hover=true]:bg-default-100/80",
+                          }}
+                        >
+                      <ListboxItem
+                        key="issues"
+                        endContent={<ItemCounter />}
+                        href="#"
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                       Яндекс Путешествия
+                      </ListboxItem>
+                      <ListboxItem
+                        key="pull_requests"
+                        endContent={<ItemCounter />}
+                        href="#"
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                        Островок
+                      </ListboxItem>
+                      <ListboxItem
+                        key="pull_requests"
+                        endContent={<ItemCounter />}
+                        href="#"
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                        Суточно.ру
+                      </ListboxItem>
+                      <ListboxItem
+                        key="pull_requests"
+                        href="#"
+                        endContent={<ItemCounter />}
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                        Авито
+                      </ListboxItem>
+                      <ListboxItem
+                        key="pull_requests"
+                        href="#"
+                        endContent={<ItemCounter />}
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                       OneTwoTrip
+                      </ListboxItem>
+                      <ListboxItem
+                        key="pull_requests"
+                        href="#"
+                        endContent={<ItemCounter />}
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <YandexIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                        Bronevik/MTC
+                      </ListboxItem>
+
+                          </Listbox>
+                        </div>
+
+                    </CardBody>
+
+                  </Card>
+                </ModalBody>
+                <ModalFooter className='pb-8 pt-0'>
+                  <div>Прежде чем совершить бронирование, рекомендуем внимательно изучить <div onClick={openTermsModal} className="text-warning underline">условия проживания</div></div>
+                </ModalFooter>
+               
+              </>
+            )}
+          </ModalContent>
+        </Modal>
+          
+          
+          
+          
+          
+        <Modal size={"xl"} key={""} isOpen={modal3Disclosure.isOpen} onClose={modal3Disclosure.onClose}
+        motionProps={{
+          initial: { y: 60, opacity: 0 },
+          animate: { y: 0, opacity: 1 },
+          exit: { y: 60, opacity: 0 },
+ 
+        }}
+        >
+          <ModalContent>
+            {() => (
+              <>
+                <ModalHeader className="flex flex-col gap-1 px-4">Вы бронируете</ModalHeader>
+                <ModalBody className='py-0 px-1'>
+                  <Card className='shadow-none '>
+                    <CardHeader className="justify-between">
+                      <div className="flex gap-5">
+                        <Image
+                          alt="nextui logo"
+                          height={40}
+                          radius="sm"
+                          src={cottage[2].img}
+                          width={40} />
+                        <div className="flex flex-col">
+                          <p className="text-md">{cottage[2].name}</p>
+                          <p className="text-small text-default-500">{cottage[0].address}</p>
+                        </div>
+                      </div>
+                      <h1 className="font-bold">{cottage[2].price}<small className="opacity-60 font-normal"> / час</small></h1>
+                    </CardHeader>
+                    <CardBody>
+                       
+                    <div>
+                        <p>Для бронирования русской бани, пожалуйста, свяжитесь с нашими администраторами по телефону или </p>
+                        <Listbox 
+                         aria-label="User Menu"
+                         
+                         className="px-0 py-3 gap-0 divide-y divide-default-300/50 dark:divide-default-100/80 bg-content1  overflow-visible"
+                         itemClasses={{
+                           base: "px-3 first:rounded-t-medium last:rounded-b-medium rounded-none gap-3 h-12 data-[hover=true]:bg-default-100/80",
+                         }}
+                        >
+                        <ListboxItem
+                        key="issues"
+                        endContent={<ItemCounter />}
+                        href=" tel:+79880420000"
+                        startContent={
+                          <IconWrapper className="bg-primary/10 text-primary">
+                            <PhoneIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                      +7 988 042 00 00
+                      </ListboxItem>
+                      <ListboxItem
+                        key="issues"
+                        href="https://api.whatsapp.com/send/?phone=+79880420000&amp;text=Здравствуйте,"
+                        endContent={<ItemCounter />}
+                        startContent={
+                          <IconWrapper className="bg-success/10 text-success">
+                            <WhatsappIcon className="text-lg " />
+                          </IconWrapper>
+                        }
+                      >
+                      whatsapp
+                      </ListboxItem>
+                      </Listbox>
+                      </div>
+
+                    </CardBody>
+
+                  </Card>
+                </ModalBody>
+                <ModalFooter className='pb-8 pt-0'>
+                  <div>Прежде чем совершить бронирование, рекомендуем внимательно изучить <div onClick={openTermsModal} className="text-warning underline">условия проживания</div></div>
+                </ModalFooter>
+               
+              </>
+            )}
+          </ModalContent>
+        </Modal>
+          
+          
+          
+          
+          
+          
+          </>
+
+))}
     </>
   );
 }

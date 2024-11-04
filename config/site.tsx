@@ -77,6 +77,7 @@ export const numbercard  = [
 export const PriceOne = [ cottage[0].price ];
 export const PriceTwo = [ cottage[1].price ];
 export const PriceRB = [ cottage[2].price ];
+ 
 
 export const DescriptionOne = [ cottage[0].description ];
 export const DescriptionTwo = [ cottage[1].description ];
