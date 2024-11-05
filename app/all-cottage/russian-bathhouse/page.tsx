@@ -1,9 +1,9 @@
 'use client'
-import { PriceOne, DescriptionOne, SquareOne, GuestsOne, comfort, PriceRB, SquareRB, GuestsRB, comfortRB } from "@/config/site";
+import { PriceOne, DescriptionOne, SquareOne, GuestsOne, comfort, PriceRB, SquareRB, GuestsRB, comfortRB, RussianBathhouse } from "@/config/site";
 import { title } from "@/components/primitives";
 import { Button, Card, Image, CardBody, CardFooter, CardHeader, CircularProgress, Dropdown, DropdownItem, DropdownMenu, DropdownSection, DropdownTrigger, Chip } from "@nextui-org/react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from 'swiper/modules';
+import { EffectCoverflow, FreeMode, Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
 import React, { useState } from 'react';
 import "swiper/css";
@@ -44,7 +44,7 @@ return (
          <LongText descriptionType={"three"}/>
       </div>
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 pb-12">
-       {comfortRB.map((item, html) => (
+       {comfortRB.map((item) => (
          <div key={""} className="flex gap-2 items-center">{item.svg}{item.title}</div>
 
        ))}
@@ -52,21 +52,35 @@ return (
       <div  > 
       </div>
    </div>
-   <div className="flex-auto w-full  sm:w-80">
-      <Swiper 
-      navigation={true} 
-      pagination={true} 
-      modules={[Pagination, Navigation,]} 
-      className="mySwiper01">
-      <SwiperSlide>
-         <img
-            src="/img/6.jpeg"
-            loading="lazy"
-            alt="xsx"
-            />
-         <CircularProgress className="swiper-lazy-preloader absolute top-[50%] left-[50%] border-none" aria-label="Loading..." />
-      </SwiperSlide>
-      </Swiper>
+   <div className="flex-auto w-full sm:w-80">
+   <Swiper 
+               navigation={true} 
+               pagination={true} 
+               modules={[Pagination, Navigation, EffectCoverflow]} 
+               className="mySwiper01"
+               effect="coverflow"
+               speed={1000}
+               autoplay={{ delay: 3000, disableOnInteraction: false }}
+               coverflowEffect={{
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: false
+                }}
+         >
+                  {RussianBathhouse.map((item) => (
+               <SwiperSlide>
+                  <img
+                     src={item.img}
+                     loading="lazy"
+                     alt={item.alt}
+                     className="rounded-[20px]"
+                     />
+                  <CircularProgress className="swiper-lazy-preloader absolute top-[50%] left-[50%] border-none" aria-label="Loading..." />
+               </SwiperSlide>
+               ))}
+         </Swiper>
 
 
       <div className="block md:hidden flex flex-col"> 

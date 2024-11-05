@@ -16,11 +16,11 @@ export const cottage = [
     conditioner:<Chip size="lg" variant="light" startContent={<ConditionerIcon height={20}/>}><span className="pl-1">4</span></Chip>,
     description: "Сottege One в нашем комплексе предлагает вам непревзойденный комфорт и современные удобства. Внутри вас ждет стильный и функциональный интерьер, где каждая деталь продумана для вашего удобства. Современная мебель и бытовая техника обеспечат вам максимальный комфорт, а панорамные окна позволят наслаждаться потрясающими видами на величественные горы, создавая атмосферу умиротворения и гармонии", 
     descriptionlite: "Сottege One - стильное жилье с панорамными окнами и современной мебелью, где каждая деталь продумана для вашего комфорта. Наслаждайтесь видами на горы и чувствуйте гармонию и умиротворение.",
-    img: "/img/9.webp",
+    img: "/img/cottageone/1.webp",
   },
   {
     name: "Сottege Two",
-    price: "10000",
+    price: "₽10000",
     title: "Сottege Two",
     href:"/all-cottage/cottage-two",
     day:" / ночь",
@@ -29,7 +29,7 @@ export const cottage = [
     conditioner:<Chip size="lg" variant="light" startContent={<ConditionerIcon/>}><span className="pl-1">4</span></Chip>,
     description: "Сottege Two в нашем комплексе — это воплощение современного комфорта и роскоши. Внутри вас ждет элегантное и функциональное пространство, где каждая деталь продумана для вашего удобства. Современная мебель и бытовая техника высочайшего качества обеспечат вам максимальный комфорт, а панорамные окна откроют перед вами захватывающие виды на величественные горы, создавая атмосферу умиротворения и гармонии.", 
     descriptionlite: "Сottage Two представляет собой оазис современного комфорта, где вас ждет элегантное пространство с панорамными видами на горы. Высококачественная мебель и бытовая техника обеспечат максимальный уровень удобства и роскошь." ,
-    img: "/img/2.webp",
+    img: "/img/cottageone/2.webp",
   },
   { 
     name: "Russian Bathhouse",
@@ -194,7 +194,7 @@ export const list = [
   },
   {
     title: "Комфорт и уют",
-    img: "/img/10.webp",  
+    img: "/img/cottageone/19.webp",  
   },
   {
     title: "Близость к природе",
@@ -272,5 +272,123 @@ export const contacts = [
    }
 ];
 
+//IMAGE Home_IMG
+export const HomeIMG  = [
+  {
+    img: "/img/4.webp",
+    alt: "1",
+  },
+  {
+    img: "/img/5.webp",
+    alt: "2",
+  },
+  {
+    img: "/img/7.webp",
+    alt: "3",
+  },
+  {
+    img: "/img/8.webp",
+    alt: "4",
+  },
+  {
+    img: "/img/12.jpeg",
+    alt: "5",
+  },
+  {
+    img: "/img/14.jpeg",
+    alt: "6",
+  },
+  {
+    img: "/img/1.webp",
+    alt: "7",
+  },
+  {
+    img: "/img/2.webp",
+    alt: "8",
+  },
+];
+
+
+//IMAGE COT_ONE
+export const cottageOneIMG  = [
+  {
+    img: "/img/cottageone/1.webp",
+    alt: "1",
+  },
+  {
+    img: "/img/cottageone/2.webp",
+    alt: "2",
+  },
+  {
+    img: "/img/cottageone/3.webp",
+    alt: "3",
+  },
+  {
+    img: "/img/cottageone/5.webp",
+    alt: "4",
+  },
+  {
+    img: "/img/cottageone/6.webp",
+    alt: "5",
+  },
+  {
+    img: "/img/cottageone/8.webp",
+    alt: "6",
+  },
+  {
+    img: "/img/cottageone/9.webp",
+    alt: "7",
+  },
+  {
+    img: "/img/cottageone/10.webp",
+    alt: "8",
+  },
+  {
+    img: "/img/cottageone/12.webp",
+    alt: "9",
+  },
+  {
+    img: "/img/cottageone/13.webp",
+    alt: "10",
+  },
+  {
+    img: "/img/cottageone/18.webp",
+    alt: "11",
+  },
+  {
+    img: "/img/cottageone/19.webp",
+    alt: "12",
+  },
+];
 
  
+//IMAGE COT_TWO
+export const cottageTwoIMG  = [
+  {
+    img: "/img/cottageone/2.webp",
+    alt: "1",
+  },
+  {
+    img: "/img/cottageone/17.webp",
+    alt: "2",
+  },
+  {
+    img: "/img/cottageone/18.webp",
+    alt: "3",
+  },
+  {
+    img: "/img/cottageone/19.webp",
+    alt: "4",
+  },
+  
+];
+
+//IMAGE COT_TWO
+export const RussianBathhouse  = [
+  {
+    img: "/img/6.jpeg",
+    alt: "1",
+  },
+  
+  
+];

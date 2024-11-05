@@ -1,9 +1,9 @@
 'use client'
-import { PriceOne, DescriptionOne, SquareOne, GuestsOne, comfort, PriceTwo, GuestsTwo, SquareTwo } from "@/config/site";
+import { PriceOne, DescriptionOne, SquareOne, GuestsOne, comfort, PriceTwo, GuestsTwo, SquareTwo, cottageOneIMG, cottageTwoIMG } from "@/config/site";
 import { title } from "@/components/primitives";
 import { Button, Card, Image, CardBody, CardFooter, CardHeader, CircularProgress, Dropdown, DropdownItem, DropdownMenu, DropdownSection, DropdownTrigger, Chip } from "@nextui-org/react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from 'swiper/modules';
+import { EffectCoverflow, FreeMode, Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
 import React, { useState } from 'react';
 import "swiper/css";
@@ -60,36 +60,33 @@ return (
       </div>
    </div>
    <div className="flex-auto w-full  sm:w-80">
-      <Swiper 
-      navigation={true} 
-      pagination={true} 
-      modules={[Pagination, Navigation,]} 
-      className="mySwiper01">
-      <SwiperSlide>
-         <img
-            src="/img/2.webp"
-            loading="lazy"
-            alt="xsx"
-            />
-         <CircularProgress className="swiper-lazy-preloader absolute top-[50%] left-[50%] border-none" aria-label="Loading..." />
-      </SwiperSlide>
-      <SwiperSlide>
-         <img
-            src="/img/10.webp"
-            loading="lazy"
-            alt="xsx"
-            />
-         <CircularProgress className="swiper-lazy-preloader absolute top-[50%] left-[50%] border-none" aria-label="Loading..." />
-      </SwiperSlide>
-      <SwiperSlide>
-         <img
-            src="/img/1.webp"
-            loading="lazy"
-            alt="xsx"
-            />
-         <CircularProgress className="swiper-lazy-preloader absolute top-[50%] left-[50%] border-none" aria-label="Loading..." />
-      </SwiperSlide>
-      </Swiper>
+          <Swiper 
+               navigation={true} 
+               pagination={true} 
+               modules={[Pagination, Navigation, EffectCoverflow]} 
+               className="mySwiper01"
+               effect="coverflow"
+               speed={1000}
+               coverflowEffect={{
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: false
+                }}
+         >
+                  {cottageTwoIMG.map((item) => (
+               <SwiperSlide>
+                  <img
+                     src={item.img}
+                     loading="lazy"
+                     className="rounded-[20px]"
+                     alt={item.alt}
+                     />
+                  <CircularProgress className="swiper-lazy-preloader absolute top-[50%] left-[50%] border-none" aria-label="Loading..." />
+               </SwiperSlide>
+               ))}
+         </Swiper>
 
 
       <div className="block md:hidden flex flex-col"> 

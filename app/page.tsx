@@ -1,9 +1,9 @@
 'use client'
-import { PriceOne, PriceRB, PriceTwo, siteConfig } from "@/config/site";
+import { HomeIMG, PriceOne, PriceRB, PriceTwo, siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
 import { Button, Card, Image, CardBody, CardFooter, CardHeader, CircularProgress, Dropdown, DropdownItem, DropdownMenu, DropdownSection, DropdownTrigger, Link, Chip } from "@nextui-org/react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from 'swiper/modules';
+import { Autoplay, EffectCoverflow, EffectCreative, FreeMode, Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
 import  IconWrapper  from "@/components/IconWrapper";
 import { list, listtwo, contacts } from "@/config/site";
@@ -39,52 +39,37 @@ export default function Home() {
 
       </div>
       <div className="flex-auto w-full  sm:w-80">
+
          <Swiper 
-         navigation={true} 
-         pagination={true} 
-         modules={[Pagination, Navigation,]} 
-         className="mySwiper01">
-         <SwiperSlide>
-            <img
-               src="/img/4.webp"
-               loading="lazy"
-               alt="xsx"
-               />
-            <CircularProgress className="swiper-lazy-preloader absolute top-[50%] left-[50%] border-none" aria-label="Loading..." />
-         </SwiperSlide>
-         <SwiperSlide>
-            <img
-               src="/img/5.webp"
-               loading="lazy"
-               alt="xsx"
-               />
-            <CircularProgress className="swiper-lazy-preloader absolute top-[50%] left-[50%] border-none" aria-label="Loading..." />
-         </SwiperSlide>
-         <SwiperSlide>
-            <img
-               src="/img/1.webp"
-               loading="lazy"
-               alt="xsx"
-               />
-            <CircularProgress className="swiper-lazy-preloader absolute top-[50%] left-[50%] border-none" aria-label="Loading..." />
-         </SwiperSlide>
-         <SwiperSlide>
-            <img
-               src="/img/2.webp"
-               loading="lazy"
-               alt="xsx"
-               />
-            <CircularProgress className="swiper-lazy-preloader absolute top-[50%] left-[50%] border-none" aria-label="Loading..." />
-         </SwiperSlide>
-         <SwiperSlide>
-            <img
-               src="/img/3.webp"
-               loading="lazy"
-               alt="xsx"
-               />
-            <CircularProgress className="swiper-lazy-preloader absolute top-[50%] left-[50%] border-none" aria-label="Loading..." />
-         </SwiperSlide>
+               navigation={true} 
+               pagination={true} 
+               modules={[Pagination, Navigation, EffectCoverflow, Autoplay]} 
+               className="mySwiper01"
+               effect="coverflow"
+               speed={1000}
+               autoplay={{ delay: 3000, disableOnInteraction: false }}
+               coverflowEffect={{
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: false
+                }}
+         >
+                  {HomeIMG.map((item) => (
+               <SwiperSlide>
+                  <img
+                     src={item.img}
+                     loading="lazy"
+                     alt={item.alt}
+                     className="rounded-[20px]"
+                     />
+                  <CircularProgress className="swiper-lazy-preloader absolute top-[50%] left-[50%] border-none" aria-label="Loading..." />
+               </SwiperSlide>
+               ))}
          </Swiper>
+           
+
          <Card className="mt-5 block md:hidden ">
             <CardBody>
                <p><b>VILLAMOGOH</b> - идеальное место для отдыха в окружении природы. Наши уютные коттеджи с видом на величественные горы подарят вам незабываемые впечатления. <br/> Забронируйте свой отдых уже сегодня!</p>
@@ -162,7 +147,7 @@ export default function Home() {
                      removeWrapper
                      alt="Relaxing app background"
                      className="z-0 w-full h-full object-cover"
-                     src="/img/9.webp"
+                     src="/img/cottageone/1.webp"
                      />
                   <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
                      <div className="flex flex-grow gap-2 items-center">
@@ -188,7 +173,7 @@ export default function Home() {
                      removeWrapper
                      alt="Relaxing app background"
                      className="z-0 w-full h-full object-cover"
-                     src="/img/2.webp"
+                     src="/img/cottageone/2.webp"
                      />
                   <CardFooter className="absolute bg-black/40 bottom-0 z-10  ">
                      <div className="flex flex-grow gap-2 items-center">
