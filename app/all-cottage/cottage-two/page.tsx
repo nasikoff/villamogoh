@@ -76,7 +76,7 @@ return (
                 }}
          >
                   {cottageTwoIMG.map((item) => (
-               <SwiperSlide>
+               <SwiperSlide key={""}>
                   <img
                      src={item.img}
                      loading="lazy"

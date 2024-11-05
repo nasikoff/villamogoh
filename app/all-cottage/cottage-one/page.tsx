@@ -75,7 +75,7 @@ return (
                 }}
          >
                   {cottageOneIMG.map((item) => (
-               <SwiperSlide>
+               <SwiperSlide key={""}>
                   <img
                      src={item.img}
                      loading="lazy"
