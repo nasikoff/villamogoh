@@ -57,7 +57,7 @@ export const about  = [
 
 export const numbercard  = [
   {
-    title: "Общая площадь",
+    title: "Общая площадь базы",
     numbertext: "5000 м²",
     svg: <SquareIcon height={40}/>,
   },

@@ -39,7 +39,7 @@ export const Navbar = () => {
       </NavbarContent>
     </NextUINavbar>
     
-    <NextUINavbar maxWidth="xl" className="fixed bottom-5 top-[auto] bg-transparent px-0 w-max m-auto" style={{backdropFilter:"none"}}>
+    <NextUINavbar maxWidth="xl" className="fixed bottom-8 top-[auto] bg-transparent px-0 w-max m-auto" style={{backdropFilter:"none"}}>
 
 <NavbarContent  justify="center" className="w-full bg-transparent backdrop-opacity-10 px-0" style={{backdropFilter:"none"}}>
 

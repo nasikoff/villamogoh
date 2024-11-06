@@ -20,17 +20,17 @@ export default function Home() {
 
   return (
     <>
-    <section className="block md:hidden pt-8 md:pt-10">
+    <section className="block md:hidden pt-8 md:pt-10 ">
       <span className={title()}>Добро пожаловать в&nbsp;</span>
       <br />
-      <span className={title({ color: "blue" })} style={{ fontFamily: "Audiowide", }}>VillaMogoh&nbsp;</span>
+      <span className={title({ color: "blue" })} style={{ fontFamily: "Zen Dots", }}>VillaMogoh&nbsp;</span>
     </section>
 
-    <section className="flex pt-4 md:pt-10">
+    <section className="flex pt-8 md:pt-10">
       <div className="hidden xl:block md:block lg:block sm:hidden flex-auto w-36 inline-block max-w-xl text-left justify-center">
          <span className={title()}>Добро пожаловать в&nbsp;</span>
          <br />
-         <span className={title({ color: "blue" })} style={{fontFamily: "Audiowide", }} >VillaMogoh&nbsp;</span>
+         <span className={title({ color: "blue" })} style={{fontFamily: "Zen Dots", }} >VillaMogoh&nbsp;</span>
          <br />
          <p className="w-full md:w-11/12 my-2 text-lg lg:text-lg pt-6 pb-4 font-normal text-default-500 block max-w-full">VILLAMOGOH - идеальное место для отдыха в окружении природы. Наши уютные коттеджи с видом на величественные горы подарят вам незабываемые впечатления. <br/> Забронируйте свой отдых уже сегодня!</p>
          <br />
