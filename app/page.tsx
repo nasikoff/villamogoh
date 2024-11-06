@@ -15,6 +15,7 @@ import 'swiper/css/navigation';
 import YandexMaps from "@/components/YandexMaps";
 import BookingButton from "@/components/BookingButton";
 import MapsButton from "@/components/MapsButton";
+import { WhatsappIcon } from "@/components/icons";
 
 export default function Home() {
 
@@ -35,7 +36,15 @@ export default function Home() {
          <p className="w-full md:w-11/12 my-2 text-lg lg:text-lg pt-6 pb-4 font-normal text-default-500 block max-w-full">VILLAMOGOH - идеальное место для отдыха в окружении природы. Наши уютные коттеджи с видом на величественные горы подарят вам незабываемые впечатления. <br/> Забронируйте свой отдых уже сегодня!</p>
          <br />
 
+        
+         <div className="flex flex-row">
          <BookingButton text={"Забронировать"}  />
+         
+         <Button className="ml-2"  isExternal as={Link}  href="https://api.whatsapp.com/send/?phone=+79880420000&text=Здравствуйте," isIconOnly color="success" aria-label="Whatsapp">
+        <WhatsappIcon height={28}/>
+      </Button>
+ 
+         </div>
 
       </div>
       <div className="flex-auto w-full  sm:w-80">
