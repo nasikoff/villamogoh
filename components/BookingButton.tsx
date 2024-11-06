@@ -116,17 +116,18 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                     </CardHeader>
                     <CardBody>
                       <h1 className='font-bold'>Проверить наличие мест</h1>
+                      <small>ожидание ссылки...</small>
                       <div>
                       <Listbox
                           aria-label="User Menu"
-                          
+                          disabledKeys={["yandex", "ostrovok" , "sutochno", "avito", "onetwotrip", "bronevik"]}
                           className="px-0 py-3 gap-0 divide-y divide-default-300/50 dark:divide-default-100/80 bg-content1  overflow-visible"
                           itemClasses={{
                             base: "px-3 first:rounded-t-medium last:rounded-b-medium rounded-none gap-3 h-12 data-[hover=true]:bg-default-100/80",
                           }}
                         >
                       <ListboxItem
-                        key="issues"
+                        key="yandex"
                         endContent={<ItemCounter />}
                         href="#"
                         startContent={
@@ -138,7 +139,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                        Яндекс Путешествия
                       </ListboxItem>
                       <ListboxItem
-                        key="pull_requests"
+                        key="ostrovok"
                         endContent={<ItemCounter />}
                         href="#"
                         startContent={
@@ -150,7 +151,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                         Островок
                       </ListboxItem>
                       <ListboxItem
-                        key="pull_requests"
+                        key="sutochno"
                         endContent={<ItemCounter />}
                         href="#"
                         startContent={
@@ -162,7 +163,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                         Суточно.ру
                       </ListboxItem>
                       <ListboxItem
-                        key="pull_requests"
+                        key="avito"
                         endContent={<ItemCounter />}
                         href="#"
                         startContent={
@@ -174,7 +175,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                         Авито
                       </ListboxItem>
                       <ListboxItem
-                        key="pull_requests"
+                        key="onetwotrip"
                         endContent={<ItemCounter />}
                         href="#"
                         startContent={
@@ -186,7 +187,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                        OneTwoTrip
                       </ListboxItem>
                       <ListboxItem
-                        key="pull_requests"
+                        key="bronevik"
                         endContent={<ItemCounter />}
                         href="#"
                         startContent={
@@ -339,17 +340,18 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                     </CardHeader>
                     <CardBody>
                       <h1 className='font-bold'>Проверить наличие мест</h1>
+                      <small>ожидание ссылки...</small>
                       <div>
                       <Listbox
                           aria-label="User Menu"
-                          
+                          disabledKeys={["yandex", "ostrovok" , "sutochno", "avito", "onetwotrip", "bronevik"]}
                           className="px-0 py-3 gap-0 divide-y divide-default-300/50 dark:divide-default-100/80 bg-content1  overflow-visible"
                           itemClasses={{
                             base: "px-3 first:rounded-t-medium last:rounded-b-medium rounded-none gap-3 h-12 data-[hover=true]:bg-default-100/80",
                           }}
                         >
                       <ListboxItem
-                        key="issues"
+                        key="yandex"
                         endContent={<ItemCounter />}
                         href="#"
                         startContent={
@@ -361,7 +363,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                        Яндекс Путешествия
                       </ListboxItem>
                       <ListboxItem
-                        key="pull_requests"
+                        key="ostrovok"
                         endContent={<ItemCounter />}
                         href="#"
                         startContent={
@@ -373,7 +375,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                         Островок
                       </ListboxItem>
                       <ListboxItem
-                        key="pull_requests"
+                        key="sutochno"
                         endContent={<ItemCounter />}
                         href="#"
                         startContent={
@@ -385,7 +387,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                         Суточно.ру
                       </ListboxItem>
                       <ListboxItem
-                        key="pull_requests"
+                        key="avito"
                         href="#"
                         endContent={<ItemCounter />}
                         startContent={
@@ -397,7 +399,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                         Авито
                       </ListboxItem>
                       <ListboxItem
-                        key="pull_requests"
+                        key="avito"
                         href="#"
                         endContent={<ItemCounter />}
                         startContent={
@@ -409,7 +411,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                        OneTwoTrip
                       </ListboxItem>
                       <ListboxItem
-                        key="pull_requests"
+                        key="bronevik"
                         href="#"
                         endContent={<ItemCounter />}
                         startContent={
@@ -485,7 +487,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                          }}
                         >
                         <ListboxItem
-                        key="issues"
+                        key="phone"
                         endContent={<ItemCounter />}
                         href=" tel:+79880420000"
                         startContent={
@@ -497,7 +499,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                       +7 988 042 00 00
                       </ListboxItem>
                       <ListboxItem
-                        key="issues"
+                        key="whatsapp"
                         href="https://api.whatsapp.com/send/?phone=+79880420000&amp;text=Здравствуйте,"
                         endContent={<ItemCounter />}
                         startContent={
