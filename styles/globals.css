@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ 
 .content-navi::after{
     content: ' \002E';
      height: 0;
@@ -16,6 +17,10 @@
 
  .mySwiper01{
   height: 450px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  
  }
 
  .mySwiper02{
