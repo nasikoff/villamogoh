@@ -1,5 +1,5 @@
  
-import { Bath2Icon, BathIcon, BroomIcon, CheckIcon, ClimatIcon, CofeIcon, ConditionerIcon, CottageIcon, FridgeIcon, GameIcon, GuestsIcon, KitchenIcon, MicriIcon, ParkingIcon, SquareIcon, TeaIcon, TvIcon, WashIcon, WifiIcon, WoodIcon } from "@/components/icons";
+import { Bath2Icon, BathIcon, BroomIcon, CheckIcon, ClimatIcon, CofeIcon, ConditionerIcon, CottageIcon, FridgeIcon, GameIcon, GuestsIcon, KitchenIcon, MicriIcon, ParkingIcon, SquareIcon, TeaIcon, TvIcon, WashIcon, WhatsappIcon, WifiIcon, WoodIcon } from "@/components/icons";
 import { Chip } from "@nextui-org/chip";
  
  
@@ -255,6 +255,12 @@ export const contacts = [
     svg: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m16.556 12.906l-.455.453s-1.083 1.076-4.038-1.862s-1.872-4.014-1.872-4.014l.286-.286c.707-.702.774-1.83.157-2.654L9.374 2.86C8.61 1.84 7.135 1.705 6.26 2.575l-1.57 1.56c-.433.432-.723.99-.688 1.61c.09 1.587.808 5 4.812 8.982c4.247 4.222 8.232 4.39 9.861 4.238c.516-.048.964-.31 1.325-.67l1.42-1.412c.96-.953.69-2.588-.538-3.255l-1.91-1.039c-.806-.437-1.787-.309-2.417.317"/></svg>,
   },
   {
+    title: "Написать на WhatsApp",
+    href:"https://api.whatsapp.com/send/?phone=+79880420000&text=Здравствуйте,",
+    svg: <WhatsappIcon height={28}/>,
+    target: "_blank",
+  },
+  {
     title: "hi@villamogoh.ru",
     href: "mailto:hi@mnogoneba.com?body=Здравствуйте",
     svg: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="currentColor" d="M4 3a2 2 0 0 0-2 2v.201l6 3.231l6-3.23V5a2 2 0 0 0-2-2zm10 3.337L8.237 9.44a.5.5 0 0 1-.474 0L2 6.337V11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2z"/></svg>,
@@ -264,6 +270,7 @@ export const contacts = [
     title: "Дагестан, с. Могох",
     href: "https://clck.ru/3EPEXZ",
     svg: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="currentColor" d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6a3 3 0 0 1 0 6"/></svg>,
+    target: "_blank",
   },
   {
     title: "круглосуточно",

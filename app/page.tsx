@@ -289,7 +289,7 @@ export default function Home() {
       <div className="flex-auto w-full md:w-36 mt-5 pl-0 md:pl-16">
       {contacts.map((item, html) => (
                <Card key={html} className="rounded-none bg-transparent outline-none shadow-none divide-x">
-                <NextLink href={item.href}>
+                <NextLink target={item.target} href={item.href}>
                   <CardHeader className="flex gap-5 p-[15px] pl-5">
                      <IconWrapper className="bg-default/10 text-secundary">
                         {item.svg}
