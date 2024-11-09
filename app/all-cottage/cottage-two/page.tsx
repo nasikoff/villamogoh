@@ -105,7 +105,7 @@ return (
          </div>
          <div>
             <BedRoomIcon height={28}/>
-            <p className="mt-2 font-medium group-data-[selected=true]:text-warning">3 спальни</p>
+            <p className="mt-2 font-medium group-data-[selected=true]:text-warning">2 спальни</p>
          </div>
          <div>
             <BathRoomIcon height={28}/>
