@@ -24,16 +24,16 @@ export default function Home() {
     <section className="block md:hidden pt-8 md:pt-10 ">
       <span className={title()}>Добро пожаловать в&nbsp;</span>
       <br />
-      <span className={title({ color: "blue" })} style={{ fontFamily: "Zen Dots", }}>VillaMogoh&nbsp;</span>
+      <span className={title({ color: "blue" })} style={{ fontFamily: "Zen Dots", }}>Villa Mogoh&nbsp;</span>
     </section>
 
     <section className="flex pt-8 md:pt-10">
       <div className="hidden xl:block md:block lg:block sm:hidden flex-auto w-36 inline-block max-w-xl text-left justify-center">
          <span className={title()}>Добро пожаловать в&nbsp;</span>
          <br />
-         <span className={title({ color: "blue" })} style={{fontFamily: "Zen Dots", }} >VillaMogoh&nbsp;</span>
+         <span className={title({ color: "blue" })} style={{fontFamily: "Zen Dots", }} >Villa Mogoh&nbsp;</span>
          <br />
-         <p className="w-full md:w-11/12 my-2 text-lg lg:text-lg pt-6 pb-4 font-normal text-default-500 block max-w-full">VILLAMOGOH - идеальное место для отдыха в окружении природы. Наши уютные коттеджи с видом на величественные горы подарят вам незабываемые впечатления. <br/> Забронируйте свой отдых уже сегодня!</p>
+         <p className="w-full md:w-11/12 my-2 text-lg lg:text-lg pt-6 pb-4 font-normal text-default-500 block max-w-full">Villa Mogoh - идеальное место для отдыха в окружении природы. Наши уютные коттеджи с видом на величественные горы подарят вам незабываемые впечатления. <br/> Забронируйте свой отдых уже сегодня!</p>
          <br />
 
         
@@ -81,7 +81,7 @@ export default function Home() {
 
          <Card className="mt-5 block md:hidden ">
             <CardBody>
-               <p><b>VILLAMOGOH</b> - идеальное место для отдыха в окружении природы. Наши уютные коттеджи с видом на величественные горы подарят вам незабываемые впечатления. <br/> Забронируйте свой отдых уже сегодня!</p>
+               <p><b>Villa Mogoh</b> - идеальное место для отдыха в окружении природы. Наши уютные коттеджи с видом на величественные горы подарят вам незабываемые впечатления. <br/> Забронируйте свой отдых уже сегодня!</p>
             </CardBody>
          </Card>
          <Card  className="mt-5 rounded-3xl border-solid border-2 border-default bg-[#000] text-white">

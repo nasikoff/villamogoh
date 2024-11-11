@@ -3,7 +3,7 @@ import * as React from "react";
 import { IconSvgProps } from "@/types";
 
 export const Logo: React.FC<IconSvgProps> = ({
-  size = 36,
+  size = 28,
   width,
   height,
   ...props
@@ -15,8 +15,8 @@ export const Logo: React.FC<IconSvgProps> = ({
     width={size || width}
     {...props}
   >
- <path fill="none" strokeLinecap="round" strokeWidth="11.5" d="m54.18678,194.70262l34.49819,-74.434l34.49818,55.8255l34.49819,-55.8255l34.49819,74.434" id="svg_2" strokeLinejoin="round" stroke="currentColor"/>
- <path fill="none" strokeLinecap="round" strokeWidth="11.5" d="m96.32979,103.28423l26.68016,-57.28745l26.68015,57.28745" id="svg_12" stroke="currentColor"/>
+ <path fill="none" strokeLinecap="round" strokeWidth="15" d="m54.18678,194.70262l34.49819,-74.434l34.49818,55.8255l34.49819,-55.8255l34.49819,74.434" id="svg_2" strokeLinejoin="round" stroke="currentColor"/>
+ <path fill="none" strokeLinecap="round" strokeWidth="15" d="m96.32979,103.28423l26.68016,-57.28745l26.68015,57.28745" id="svg_12" stroke="currentColor"/>
   </svg>
 );
 
