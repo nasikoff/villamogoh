@@ -58,12 +58,12 @@ export const about  = [
 export const numbercard  = [
   {
     title: "Общая площадь базы",
-    numbertext: "5000 м²",
+    numbertext: "3000 м²",
     svg: <SquareIcon height={40}/>,
   },
   {
     title: "Довольных гостей",
-    numbertext: "+190",
+    numbertext: "200+",
     svg: <GuestsIcon height={40}/>,
   },
   {
@@ -73,11 +73,9 @@ export const numbercard  = [
   },
 ];
 
-
 export const PriceOne = [ cottage[0].price ];
 export const PriceTwo = [ cottage[1].price ];
 export const PriceRB = [ cottage[2].price ];
- 
 
 export const DescriptionOne = [ cottage[0].description ];
 export const DescriptionTwo = [ cottage[1].description ];
@@ -95,27 +93,27 @@ export const GuestsRB = [ cottage[2].guests ];
 export const comfortRB  = [
   {
     title: "Парная",
-    svg: <BathIcon height={16}/>, 
+    svg: <BathIcon height={18}/>, 
   },
   {
     title: "Веники",
-    svg: <BroomIcon height={16}/>,   
+    svg: <BroomIcon height={18}/>,   
   },
   {
     title: "Деревянный настил",
-    svg: <WoodIcon height={16}/>,  
+    svg: <WoodIcon height={18}/>,  
   },
   {
     title: "Предбанник",
-    svg: <Bath2Icon height={16}/>,  
+    svg: <Bath2Icon height={18}/>,  
   },
   {
     title: "Моечная",
-    svg: <WashIcon height={16}/>,   
+    svg: <WashIcon height={18}/>,   
   },
   {
     title: "Чайная комната",
-    svg: <TeaIcon height={16}/>,   
+    svg: <TeaIcon height={18}/>,   
   },
  
 ];
@@ -123,43 +121,45 @@ export const comfortRB  = [
 export const comfort = [
   {
     title: "Парковка",
-    svg: <ParkingIcon height={16}/>, 
+    svg: <ParkingIcon height={18}/>, 
   },
   {
     title: "TV",
-    svg: <TvIcon height={16}/>,   
+    svg: <TvIcon height={18}/>,   
   },
   {
     title: "Wi-Fi",
-    svg: <WifiIcon height={16}/>,  
+    svg: <WifiIcon height={18}/>,  
   },
   {
     title: "Кондиционер",
-    svg: <ClimatIcon height={16}/>,   
+    svg: <ClimatIcon height={18}/>,   
   },
   {
     title: "Развлечения",
-    svg: <GameIcon height={16}/>,   
+    svg: <GameIcon height={18}/>,   
   },
+  /*
   {
     title: "Микроволновка",
-    svg: <MicriIcon height={16}/>,     
+    svg: <MicriIcon height={18}/>,     
   },
+  */
   {
     title: "Холодильник",
-    svg: <FridgeIcon height={16}/>,    
+    svg: <FridgeIcon height={18}/>,    
   },
   {
     title: "Кофемашина",
-    svg: <CofeIcon height={16}/>,  
+    svg: <CofeIcon height={18}/>,  
   },
   {
     title: "Приборы",
-    svg: <KitchenIcon height={16}/>,   
+    svg: <KitchenIcon height={18}/>,   
   },
   {
     title: "Удобства",
-    svg: <CheckIcon height={16}/>,     
+    svg: <CheckIcon height={18}/>,     
   },
 ];
 

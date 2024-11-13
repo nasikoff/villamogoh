@@ -87,7 +87,7 @@ export default function Home() {
          <Card  className="mt-5 rounded-3xl border-solid border-2 border-default bg-[#000] text-white">
             <CardBody >
                <div className="flex flex-row" >
-                  <div className="basis-1/5  text-xl sm:text-3xl text-left font-bold pl-5">190+</div>
+                  <div className="basis-1/5  text-xl sm:text-3xl text-left font-bold pl-5">200+</div>
                   <div className="basis-4/5 text-xl sm:text-3xl text-right font-extralight pr-5" style={{ fontFamily: "Jost",  }}>Довольных гостей
                </div>
               </div>

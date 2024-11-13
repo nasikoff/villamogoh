@@ -12,15 +12,19 @@ import 'swiper/css/navigation';
 import { BathRoomIcon, BedRoomIcon,GuestsIcon, SquareIcon } from "@/components/icons";
 import LongText from "@/components/LongText";
 import BookingButton from "@/components/BookingButton";
+import GoBack from "@/components/GoBack";
 
  
 export default function CottageTwoPage() {
 return (
 <>
-<section className="block md:hidden pt-8 md:pt-10">
+
+<GoBack/>
+
+<section className="block md:hidden pt-6 md:pt-8">
    <span className={title()}>Cottage Two</span>
 </section>
-<section key={""} className="flex pt-8 md:pt-10 pb-24">
+<section key={""} className="flex pt-8 md:pt-8 pb-24">
    <div className="hidden xl:block md:block lg:block sm:hidden flex-auto w-36 inline-block max-w-xl text-left justify-center">
       <span className={title()}>Cottage Two</span>
       <p className="pt-2 opacity-60">Дагестан, с. Могох</p>

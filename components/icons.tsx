@@ -634,4 +634,21 @@ export const WhatsappIcon: React.FC<IconSvgProps> = (props) => {
     </svg>
   );
 };
+
+export const BackIcon: React.FC<IconSvgProps> = (props) => {
+  const { width, height = 22 } = props;
+
+  return (
+    <svg
+      fill="none"
+      height={height}
+      viewBox="0 0 24 24"
+      width={width}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+        >
+<path fill="currentColor" d="M9.308 17.308L4 12l5.308-5.308l.708.708l-4.1 4.1H20v1H5.916l4.1 4.1z"/>
+    </svg>
+  );
+};
  
