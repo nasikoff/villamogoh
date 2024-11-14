@@ -651,4 +651,23 @@ export const BackIcon: React.FC<IconSvgProps> = (props) => {
     </svg>
   );
 };
+
+
+export const RoffIcon: React.FC<IconSvgProps> = (props) => {
+  const { width, height = 22 } = props;
+
+  return (
+    <svg
+      fill="none"
+      height={height}
+      viewBox="0 0 24 20"
+      width={width}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+        >
+    <path stroke="currentColor" id="svg_2" d="m6.441853,7.018354l0,-6.018513l18.05551,0l0,18.05552l-18.05551,0l0,-6.018513l12.037017,0l0,-6.018503l-12.037017,0" stroke-width="0" fill="currentColor"></path>
+    <path stroke="currentColor" id="svg_5" d="m0.447425,7.03094l5.994448,0l0,5.994438l-5.994448,0l0,-5.994448l0,0.00001z" stroke-width="0" fill="#00e676"></path>
+    </svg>
+  );
+};
  

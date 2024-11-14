@@ -15,7 +15,7 @@ import 'swiper/css/navigation';
 import YandexMaps from "@/components/YandexMaps";
 import BookingButton from "@/components/BookingButton";
 import MapsButton from "@/components/MapsButton";
-import { WhatsappIcon } from "@/components/icons";
+import { RoffIcon, WhatsappIcon } from "@/components/icons";
 
 export default function Home() {
 
@@ -300,7 +300,20 @@ export default function Home() {
                   </CardHeader>
                   </NextLink>
                </Card>
+               
                ))}
+                <Card  className="rounded-none bg-transparent outline-none shadow-none divide-x relative top-6">
+                <NextLink target="_blank" href="https://rizakhanoff.com/">
+                  <CardHeader className="flex gap-5 p-[15px] pl-5">
+                     <IconWrapper className="bg-default/10 text-secundary"  >
+                      <RoffIcon/>
+                     </IconWrapper>
+                     <div className="flex flex-col">
+                        <p className="text-md font-semibold">by rizakhanoff</p>
+                     </div>
+                  </CardHeader>
+                  </NextLink>
+               </Card>
       </div>
           
        
