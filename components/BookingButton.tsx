@@ -83,7 +83,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
 
       {/* Модальное окно 1 */}
 
-      {cottage.map((item, html) => (
+      {cottage.map(() => (
 
       <>
         <Modal size={"xl"} key={""} isOpen={modal1Disclosure.isOpen} onClose={modal1Disclosure.onClose}
@@ -477,7 +477,7 @@ const BookingButton: FC<BookingButtonProps> = ({ text }) => {
                     <CardBody>
                        
                     <div>
-                        <p>Для бронирования русской бани, пожалуйста, свяжитесь с нашими администраторами по телефону или </p>
+                        <p>Для бронирования русской бани, пожалуйста, свяжитесь с нашими администраторами по телефону </p>
                         <Listbox 
                          aria-label="User Menu"
                          
